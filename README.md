@@ -10,7 +10,7 @@ There is a base board to put up to 8 ESP32-C3 Minis on, including different COM 
 ### Base Board Back:
 ![Base Board Front](hardware/BaseBoard/BaseBoard-back.jpg)
 
-More details in the [sardware folder](/hardware/).
+More details in the [hardware folder](/hardware/).
 
 ## Software
 There are examples in the [software folder](/software/).
