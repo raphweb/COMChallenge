@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "sw_dpdt_xlx")(type "KiCad")(uri "${KIPRJMOD}/sw_dpdt_xlx/sw_dpdt_xlx.kicad_sym")(options "")(descr ""))
+)
