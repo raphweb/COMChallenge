@@ -9927,7 +9927,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS5-IN"
+		(property "Value" "BUS-IN"
 			(at 101.6 101.6 90)
 			(effects
 				(font
@@ -10449,7 +10449,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS1-IN"
+		(property "Value" "BUS-IN"
 			(at 22.86 62.23 0)
 			(effects
 				(font
@@ -11129,7 +11129,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS1-IN"
+		(property "Value" "BUS-IN"
 			(at 22.86 22.86 0)
 			(effects
 				(font
@@ -12455,7 +12455,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS5-IN"
+		(property "Value" "BUS-IN"
 			(at 101.6 140.97 90)
 			(effects
 				(font
@@ -12542,7 +12542,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "BUS1-OUT"
+		(property "Value" "BUS-OUT"
 			(at 32.512 111.506 90)
 			(effects
 				(font
@@ -12679,7 +12679,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "BUS1-OUT"
+		(property "Value" "BUS-OUT"
 			(at 103.632 150.876 90)
 			(effects
 				(font
@@ -13607,7 +13607,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "BUS1-OUT"
+		(property "Value" "BUS-OUT"
 			(at 32.512 32.766 90)
 			(effects
 				(font
@@ -13899,7 +13899,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "BUS1-OUT"
+		(property "Value" "BUS-OUT"
 			(at 32.512 72.136 90)
 			(effects
 				(font
@@ -14118,7 +14118,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS1-IN"
+		(property "Value" "BUS-IN"
 			(at 22.86 101.6 0)
 			(effects
 				(font
@@ -15012,7 +15012,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS5-IN"
+		(property "Value" "BUS-IN"
 			(at 101.6 62.23 90)
 			(effects
 				(font
@@ -15638,7 +15638,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "BUS1-OUT"
+		(property "Value" "BUS-OUT"
 			(at 32.512 150.876 90)
 			(effects
 				(font
@@ -16401,7 +16401,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "BUS1-OUT"
+		(property "Value" "BUS-OUT"
 			(at 103.632 72.136 90)
 			(effects
 				(font
@@ -16650,7 +16650,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "BUS1-OUT"
+		(property "Value" "BUS-OUT"
 			(at 103.632 32.766 90)
 			(effects
 				(font
@@ -16790,7 +16790,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS5-IN"
+		(property "Value" "BUS-IN"
 			(at 101.6 22.86 90)
 			(effects
 				(font
@@ -17011,7 +17011,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "BUS1-OUT"
+		(property "Value" "BUS-OUT"
 			(at 103.632 111.506 90)
 			(effects
 				(font
@@ -17846,7 +17846,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS1-IN"
+		(property "Value" "BUS-IN"
 			(at 22.86 140.97 0)
 			(effects
 				(font

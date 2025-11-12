@@ -1287,7 +1287,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS1-OUT"
+		(property "Value" "BUS-OUT"
 			(at 0 5.31 90)
 			(layer "F.Fab")
 			(uuid "db1b8697-a7d3-4291-ba3d-2dac1622aa5c")
@@ -3368,7 +3368,7 @@
 			(net 27 "Net-(J1-Pin_1)")
 			(pinfunction "VO")
 			(pintype "power_out")
-			(uuid "00d15757-7bb2-46e3-96e9-6e5afc51a335")
+			(uuid "1fa6bb49-6abc-4799-bb01-f075ae4a26ef")
 		)
 		(pad "3" smd roundrect
 			(at -3.15 2.3)
@@ -4626,7 +4626,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS1-IN"
+		(property "Value" "BUS-IN"
 			(at -1.27 10.39 90)
 			(layer "F.Fab")
 			(uuid "938db09a-eb9b-432b-89e4-923c92f33c12")
@@ -5504,7 +5504,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS1-IN"
+		(property "Value" "BUS-IN"
 			(at -1.27 10.39 90)
 			(layer "F.Fab")
 			(uuid "22d077ad-e6a5-487f-b97b-c70fdff8f4ac")
@@ -8425,7 +8425,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS5-IN"
+		(property "Value" "BUS-IN"
 			(at -1.27 10.39 90)
 			(layer "F.Fab")
 			(uuid "1907072a-5003-4a31-bd02-3035a607bcc5")
@@ -9568,7 +9568,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS1-OUT"
+		(property "Value" "BUS-OUT"
 			(at 0 5.31 90)
 			(layer "F.Fab")
 			(uuid "65e6d1d1-7cc7-44a7-8876-22f46c997076")
@@ -12004,7 +12004,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS5-IN"
+		(property "Value" "BUS-IN"
 			(at -1.27 10.39 90)
 			(layer "F.Fab")
 			(uuid "9a05628b-8fe9-42b5-b7d1-2c5d6f05047d")
@@ -12884,7 +12884,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS1-IN"
+		(property "Value" "BUS-IN"
 			(at -1.27 10.39 90)
 			(layer "F.Fab")
 			(uuid "0943585d-20d1-4b0c-a55a-2c6ac0a3ba26")
@@ -13940,7 +13940,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS1-OUT"
+		(property "Value" "BUS-OUT"
 			(at 0 5.31 90)
 			(layer "F.Fab")
 			(uuid "a89b48aa-3094-41d4-aafd-affc385497b9")
@@ -19213,7 +19213,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS5-IN"
+		(property "Value" "BUS-IN"
 			(at -1.27 10.39 90)
 			(layer "F.Fab")
 			(uuid "cac8c9d6-e489-442e-b68c-5a6fa095d690")
@@ -20668,7 +20668,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS1-OUT"
+		(property "Value" "BUS-OUT"
 			(at 0 5.31 90)
 			(layer "F.Fab")
 			(uuid "665f574f-c72a-4f40-bc25-5b52843b15e3")
@@ -21125,7 +21125,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS1-OUT"
+		(property "Value" "BUS-OUT"
 			(at 0 5.31 90)
 			(layer "F.Fab")
 			(uuid "b4552632-ee69-4aa6-af46-60e46bdb8e65")
@@ -23070,7 +23070,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS1-OUT"
+		(property "Value" "BUS-OUT"
 			(at 0 5.31 90)
 			(layer "F.Fab")
 			(uuid "ca5dcb83-2de7-43ca-b359-b6195af7cb44")
@@ -23644,7 +23644,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS1-OUT"
+		(property "Value" "BUS-OUT"
 			(at 0 5.31 90)
 			(layer "F.Fab")
 			(uuid "be389610-5375-492f-988d-0f1471edcd9e")
@@ -24118,7 +24118,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS1-OUT"
+		(property "Value" "BUS-OUT"
 			(at 0 5.31 90)
 			(layer "F.Fab")
 			(uuid "f5cf9da5-b3a7-4c5a-9902-59bb9d888f19")
@@ -25423,7 +25423,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS5-IN"
+		(property "Value" "BUS-IN"
 			(at -1.27 10.39 90)
 			(layer "F.Fab")
 			(uuid "0e71c30b-c2e0-4dd8-8a15-e59b7770d617")
@@ -25763,7 +25763,7 @@
 				)
 			)
 		)
-		(property "Value" "BUS1-IN"
+		(property "Value" "BUS-IN"
 			(at -1.27 10.39 90)
 			(layer "F.Fab")
 			(uuid "e12dce8d-4eb1-4f7d-8891-e699c0162080")
@@ -34611,8 +34611,8 @@
 				(xy 125.51705 73.42924) (xy 125.475203 73.401703) (xy 125.396819 73.323319) (xy 125.363334 73.261996)
 				(xy 125.3605 73.235638) (xy 125.3605 66.464361) (xy 125.380185 66.397322) (xy 125.396819 66.37668)
 				(xy 126.57468 65.198819) (xy 126.636003 65.165334) (xy 126.662361 65.1625) (xy 130.721309 65.1625)
-				(xy 130.898691 65.1625) (xy 151.041309 65.1625) (xy 151.218691 65.1625) (xy 171.361309 65.1625)
-				(xy 171.538691 65.1625) (xy 191.681309 65.1625) (xy 191.858691 65.1625) (xy 198.457638 65.1625)
+				(xy 130.898691 65.1625) (xy 151.041309 65.1625) (xy 171.361309 65.1625) (xy 191.681309 65.1625)
+				(xy 198.457638 65.1625)
 			)
 		)
 		(filled_polygon
