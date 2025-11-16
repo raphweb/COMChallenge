@@ -230,17 +230,6 @@
 		(uuid "7ed9d592-4f07-4c0b-a9ce-c3b8026124ec")
 	)
 	(embedded_fonts no)
-	(model "${KICAD6_USER_3DMOD_DIR}/SW_Btn_XLX.step"
-		(offset
-			(xyz 0 0 0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
 	(model "${KIPRJMOD}/sw_dpdt_xlx/SW_Btn_XLX.step"
 		(offset
 			(xyz 0 0 0)

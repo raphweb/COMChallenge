@@ -1,0 +1,5 @@
+(design_block_lib_table
+  (version 7)
+  (lib (name "TLIN2029ADRQ1")(type "KiCad")(uri "${KIPRJMOD}/TLIN2029ADRQ1")(options "")(descr ""))
+  (lib (name "SW_SPDT_Shouhan_MSK12C02")(type "KiCad")(uri "${KIPRJMOD}/SW_SPDT_Shouhan_MSK12C02")(options "")(descr ""))
+)
