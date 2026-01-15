@@ -5695,6 +5695,26 @@
 		)
 		(uuid "f9078e87-d948-4bc0-a44f-b69dfaa64f24")
 	)
+	(label "T1S_d+"
+		(at 104.14 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "726fe421-f5e8-47a0-88be-2c22f7c77178")
+	)
+	(label "T1S_d-"
+		(at 104.14 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc9d1097-a48d-4425-b3ce-f4fca55c83a3")
+	)
 	(global_label "TRXP"
 		(shape bidirectional)
 		(at 40.64 43.18 90)
