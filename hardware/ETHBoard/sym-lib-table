@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "LAN8651B1-E_LMX")(type "KiCad")(uri "${KIPRJMOD}/LIB_LAN8651B1-E_LMX/LAN8651B1-E_LMX.kicad_sym")(options "")(descr ""))
+  (lib (name "AVRH10C221KT1R5YA8")(type "KiCad")(uri "${KIPRJMOD}/LIB_AVRH10C221KT1R5YA8/AVRH10C221KT1R5YA8.kicad_sym")(options "")(descr ""))
+)

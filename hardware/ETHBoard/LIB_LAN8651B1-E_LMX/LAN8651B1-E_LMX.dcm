@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LAN8651B1-E_LMX
+D Ethernet ICs 10BASE-T1S MAC-PHY with SPI
+K
+F https://ww1.microchip.com/downloads/aemDocuments/documents/AIS/ProductDocuments/DataSheets/LAN8650-1-Data-Sheet-60001734.pdf
+$ENDCMP
+#
+#End Doc Library
