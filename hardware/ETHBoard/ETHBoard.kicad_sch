@@ -85,7 +85,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TDK/AVRH10C221KT1R5YA8?qs=P1JMDcb91o7%2FqB%252BLJliAkA%3D%3D"
+			(property "Mouser Price Stock" "https://www.mouser.co.uk/ProductDetail/TDK/AVRH10C221KT1R5YA8?qs=P1JMDcb91o7%2FqB%252BLJliAkA%3D%3D"
 				(at 13.97 -596.19 0)
 				(effects
 					(font
@@ -1292,7 +1292,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/LAN8651B1-E-LMX?qs=HoCaDK9Nz5cTGz8XEJbodA%3D%3D"
+			(property "Mouser Price Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/LAN8651B1-E-LMX?qs=HoCaDK9Nz5cTGz8XEJbodA%3D%3D"
 				(at 36.83 -782.22 0)
 				(effects
 					(font
@@ -1312,7 +1312,7 @@
 					(hide yes)
 				)
 			)
-			(property "Arrow Price/Stock" ""
+			(property "Arrow Price Stock" ""
 				(at 36.83 -982.22 0)
 				(effects
 					(font
@@ -1931,262 +1931,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_JLCPCB-Capacitors:0603,10uF"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 2.032 1.668 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "10uF"
-				(at 2.032 -0.3782 0)
-				(effects
-					(font
-						(size 0.8 0.8)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "PCM_JLCPCB:C_0603"
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "10V 10uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC" "C19702"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Stock" "9881407"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Price" "0.009USD"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Process" "SMT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Minimum Qty" "20"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Attrition Qty" "10"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Class" "Basic Component"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "Samsung Electro-Mechanics"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Part" "CL10A106KP8NNNC"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Voltage Rated" "10V"
-				(at 2.032 -2.0462 0)
-				(effects
-					(font
-						(size 0.8 0.8)
-					)
-					(justify left)
-				)
-			)
-			(property "Tolerance" "±10%"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Capacitance" "10uF"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Temperature Coefficient" "X5R"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "0603,10uF_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0.635) (xy 1.27 0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -0.635) (xy 1.27 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "0603,10uF_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 3.175)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 3.175)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GNDREF"
 			(power)
 			(pin_numbers
@@ -2730,7 +2474,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 33.02) (xy 97.79 34.29)
+			(xy 97.79 31.75) (xy 97.79 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3900,16 +3644,6 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 24.13) (xy 97.79 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "def50d05-c409-494d-bf78-96dedf9a7324")
-	)
-	(wire
-		(pts
 			(xy 38.1 43.18) (xy 38.1 44.45)
 		)
 		(stroke
@@ -3957,6 +3691,16 @@
 			(type default)
 		)
 		(uuid "ec98d8f1-392e-4212-a4ec-365e026288ba")
+	)
+	(wire
+		(pts
+			(xy 97.79 24.13) (xy 97.79 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eeb9c07b-1caf-4138-85e2-71b9f721cb6c")
 	)
 	(wire
 		(pts
@@ -5444,7 +5188,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power(Watts)" "250mW"
+		(property "Power" "250mW"
 			(at 90.17 102.87 0)
 			(effects
 				(font
@@ -5462,7 +5206,7 @@
 				(hide yes)
 			)
 		)
-		(property "Overload Voltage (Max)" "200V"
+		(property "Overload Voltage Max" "200V"
 			(at 90.17 102.87 0)
 			(effects
 				(font
@@ -5514,7 +5258,7 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_JLCPCB-Capacitors:0603,10uF")
+		(lib_id "Device:C_Small")
 		(at 97.79 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5524,7 +5268,7 @@
 		(fields_autoplaced yes)
 		(uuid "340d42dd-2e12-4e5d-9930-f11b0cb3ad7d")
 		(property "Reference" "C4"
-			(at 100.33 26.6699 0)
+			(at 100.33 26.6762 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5533,7 +5277,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 100.33 29.21 0)
+			(at 100.33 29.2163 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -5542,15 +5286,6 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 96.012 29.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf"
 			(at 97.79 29.21 0)
 			(effects
 				(font
@@ -5559,7 +5294,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "10V 10uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+		(property "Datasheet" "~"
+			(at 97.79 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 97.79 29.21 0)
 			(effects
 				(font
@@ -5659,7 +5403,7 @@
 			)
 		)
 		(property "Voltage Rated" "10V"
-			(at 100.33 31.75 0)
+			(at 100.33 31.7563 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -7685,7 +7429,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power(Watts)" "250mW"
+		(property "Power" "250mW"
 			(at 90.17 92.71 0)
 			(effects
 				(font
@@ -7703,7 +7447,7 @@
 				(hide yes)
 			)
 		)
-		(property "Overload Voltage (Max)" "200V"
+		(property "Overload Voltage Max" "200V"
 			(at 90.17 92.71 0)
 			(effects
 				(font
@@ -7828,7 +7572,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TDK/AVRH10C221KT1R5YA8?qs=P1JMDcb91o7%2FqB%252BLJliAkA%3D%3D"
+		(property "Mouser Price Stock" "https://www.mouser.co.uk/ProductDetail/TDK/AVRH10C221KT1R5YA8?qs=P1JMDcb91o7%2FqB%252BLJliAkA%3D%3D"
 			(at 110.49 699.06 0)
 			(effects
 				(font
@@ -8159,7 +7903,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/LAN8651B1-E-LMX?qs=HoCaDK9Nz5cTGz8XEJbodA%3D%3D"
+		(property "Mouser Price Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/LAN8651B1-E-LMX?qs=HoCaDK9Nz5cTGz8XEJbodA%3D%3D"
 			(at 59.69 846.99 0)
 			(effects
 				(font
@@ -8179,7 +7923,7 @@
 				(hide yes)
 			)
 		)
-		(property "Arrow Price/Stock" ""
+		(property "Arrow Price Stock" ""
 			(at 59.69 1046.99 0)
 			(effects
 				(font
@@ -8371,7 +8115,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TDK/AVRH10C221KT1R5YA8?qs=P1JMDcb91o7%2FqB%252BLJliAkA%3D%3D"
+		(property "Mouser Price Stock" "https://www.mouser.co.uk/ProductDetail/TDK/AVRH10C221KT1R5YA8?qs=P1JMDcb91o7%2FqB%252BLJliAkA%3D%3D"
 			(at 110.49 688.9 0)
 			(effects
 				(font
@@ -8569,7 +8313,7 @@
 				(hide yes)
 			)
 		)
-		(property "Power(Watts)" "100mW"
+		(property "Power" "100mW"
 			(at 130.81 72.39 0)
 			(effects
 				(font
@@ -8587,7 +8331,7 @@
 				(hide yes)
 			)
 		)
-		(property "Overload Voltage (Max)" "75V"
+		(property "Overload Voltage Max" "75V"
 			(at 130.81 72.39 0)
 			(effects
 				(font

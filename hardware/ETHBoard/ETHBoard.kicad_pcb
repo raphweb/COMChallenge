@@ -1424,6 +1424,19 @@
 				)
 			)
 		)
+		(property "Mouser Price Stock" "https://www.mouser.co.uk/ProductDetail/TDK/AVRH10C221KT1R5YA8?qs=P1JMDcb91o7%2FqB%252BLJliAkA%3D%3D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8d07ddf1-495a-4b98-8cc0-114f9a306e85")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/97804cb3-d498-4fff-8176-02e578a0ced5")
 		(sheetname "/")
 		(sheetfile "ETHBoard.kicad_sch")
@@ -2468,6 +2481,32 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/LAN8651B1-E-LMX?qs=HoCaDK9Nz5cTGz8XEJbodA%3D%3D"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "08c10468-04cb-4437-8304-2791507298f9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Arrow Price Stock" ""
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6b47da8-c2c9-40c2-8eae-c48a1549ac2f")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -3941,6 +3980,32 @@
 				)
 			)
 		)
+		(property "Power" "250mW"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2290fe12-0587-4c7d-8beb-3a173b652173")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Overload Voltage Max" "200V"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f10077ae-0544-4900-926e-0f3ee6943917")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/971f3ab7-56c1-482f-8f3e-7b41bebfc4ed")
 		(sheetname "/")
@@ -5122,6 +5187,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ae78861c-f7cb-4322-855d-7f648ed71b2b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "250mW"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fec0ebf0-9e9e-44d3-8466-1c7a9bbee3bf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Overload Voltage Max" "200V"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9a02f8a6-3087-4bce-86ab-14f6eac68395")
 			(effects
 				(font
 					(size 1 1)
@@ -6316,7 +6407,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL10A106KP8NNNC_C19702.pdf"
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -6328,7 +6419,7 @@
 				)
 			)
 		)
-		(property "Description" "10V 10uF X5R ±10% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -6797,6 +6888,19 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price Stock" "https://www.mouser.co.uk/ProductDetail/TDK/AVRH10C221KT1R5YA8?qs=P1JMDcb91o7%2FqB%252BLJliAkA%3D%3D"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ecfc32d7-f0ca-4e38-a3a5-35ed2991a11e")
+			(effects
+				(font
+					(size 1 1)
 					(thickness 0.15)
 				)
 			)
@@ -7907,6 +8011,32 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c0231120-48df-40ee-a427-819d7a5c3a7d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Power" "100mW"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2ede3c5f-c6ee-479a-aaf5-40da592bb8c2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Overload Voltage Max" "75V"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "80450000-bd22-496f-b844-623995fddfe6")
 			(effects
 				(font
 					(size 1 1)
@@ -9532,14 +9662,6 @@
 		(uuid "84342fb7-59b5-40ca-9be3-6a9ee0a9ca63")
 	)
 	(segment
-		(start 85.7646 55.4274)
-		(end 85.758 55.434)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 5)
-		(uuid "8e7c4a5c-1e24-4ae4-a61b-f4ba1fff4589")
-	)
-	(segment
 		(start 76.708 54.356)
 		(end 78.5114 54.356)
 		(width 0.2)
@@ -9618,14 +9740,6 @@
 		(layer "F.Cu")
 		(net 5)
 		(uuid "e043b380-75aa-41dd-a403-2df454c2faac")
-	)
-	(segment
-		(start 92.1004 58.2194)
-		(end 92.0188 58.301)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 5)
-		(uuid "e7a0751a-324a-493f-85b5-49405730c090")
 	)
 	(segment
 		(start 83.758 55.434)
@@ -9914,14 +10028,6 @@
 		(layer "F.Cu")
 		(net 9)
 		(uuid "cc681835-9d91-49a1-89c8-75143ea8ef44")
-	)
-	(segment
-		(start 75.438 58.166)
-		(end 75.438 58.1406)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 10)
-		(uuid "4614edc4-dde0-4e36-bd59-c78f1ec46170")
 	)
 	(segment
 		(start 79.3496 57.6326)
