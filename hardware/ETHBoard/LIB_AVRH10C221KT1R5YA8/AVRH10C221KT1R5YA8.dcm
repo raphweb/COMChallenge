@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP AVRH10C221KT1R5YA8
-D Chip Varistors / Ceramic Transient Voltage Suppressors, Maximum continuous voltage [DC]=70V, Maximum Clamping Voltage (8/20uS)=400V
-K
-F https://product.tdk.com/system/files/dam/doc/product/protection/voltage/varistor_ctvs/catalog/vpd_automotive_varistors_avr_en.pdf
-$ENDCMP
-#
-#End Doc Library

@@ -364,7 +364,7 @@
 		(uuid "d226178c-0a0e-4a12-a1f0-d01b21265290")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/LIB_LAN8651B1-E_LMX/LAN8651B1-E_LMX.stp"
+	(model "${KIPRJMOD}/LIB_LAN8651B1-E_LMX/LAN8651B1-E_LMX.step"
 		(offset
 			(xyz 0 0 0)
 		)
