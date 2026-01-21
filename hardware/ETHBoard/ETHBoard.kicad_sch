@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "ETHBoard")
-		(date "2025-12-14")
+		(date "2026-01-21")
 		(rev "1.0")
 		(company "RaphWeb")
 	)
@@ -85,7 +85,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price Stock" "https://www.mouser.co.uk/ProductDetail/TDK/AVRH10C221KT1R5YA8?qs=P1JMDcb91o7%2FqB%252BLJliAkA%3D%3D"
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TDK/AVRH10C221KT1R5YA8?qs=P1JMDcb91o7%2FqB%252BLJliAkA%3D%3D"
 				(at 13.97 -596.19 0)
 				(effects
 					(font
@@ -116,6 +116,197 @@
 				)
 			)
 			(symbol "AVRH10C221KT1R5YA8_1_1"
+				(polyline
+					(pts
+						(xy 3.81 -2.54) (xy 6.35 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 1.27)
+					(end 12.7 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 11.43 2.54) (xy 6.35 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 11.43 2.54) (xy 13.97 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 0 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "AVRH10C221KT1R5YA8_1"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "RV"
+				(at 13.97 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "AVRH10C221KT1R5YA8"
+				(at 13.97 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "RESC1005X55N"
+				(at 13.97 -96.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/protection/voltage/varistor_ctvs/catalog/vpd_automotive_varistors_avr_en.pdf"
+				(at 13.97 -196.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Chip Varistors / Ceramic Transient Voltage Suppressors, Maximum continuous voltage [DC]=70V, Maximum Clamping Voltage (8/20uS)=400V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "0.55"
+				(at 13.97 -396.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "810-AVRH10C221K1R5YA"
+				(at 13.97 -496.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TDK/AVRH10C221KT1R5YA8?qs=P1JMDcb91o7%2FqB%252BLJliAkA%3D%3D"
+				(at 13.97 -596.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "TDK"
+				(at 13.97 -696.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "AVRH10C221KT1R5YA8"
+				(at 13.97 -796.19 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "AVRH10C221KT1R5YA8_1_1_1"
 				(polyline
 					(pts
 						(xy 3.81 -2.54) (xy 6.35 -2.54)
@@ -671,6 +862,194 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "DLW32MH201XK2L:DLW32MH201XK2L"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FL"
+				(at 16.51 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "DLW32MH201XK2L"
+				(at 16.51 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "DLW32MH101XK2L"
+				(at 16.51 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=DLW32MH201XK2%23"
+				(at 16.51 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "DLW32MH_K2L Series EMI Suppression Filter 200uH 70mA 50V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "2.5"
+				(at 16.51 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "81-DLW32MH201XK2L"
+				(at 16.51 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/DLW32MH201XK2L?qs=55YtniHzbhAIj13Gqw4npA%3D%3D"
+				(at 16.51 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Murata Electronics"
+				(at 16.51 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "DLW32MH201XK2L"
+				(at 16.51 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "DLW32MH201XK2L_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 15.24 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -2.54 180)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1292,7 +1671,7 @@
 					(hide yes)
 				)
 			)
-			(property "Mouser Price Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/LAN8651B1-E-LMX?qs=HoCaDK9Nz5cTGz8XEJbodA%3D%3D"
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/LAN8651B1-E-LMX?qs=HoCaDK9Nz5cTGz8XEJbodA%3D%3D"
 				(at 36.83 -782.22 0)
 				(effects
 					(font
@@ -1312,7 +1691,7 @@
 					(hide yes)
 				)
 			)
-			(property "Arrow Price Stock" ""
+			(property "Arrow Price/Stock" ""
 				(at 36.83 -982.22 0)
 				(effects
 					(font
@@ -2177,7 +2556,7 @@
 		(uuid "035d658c-be14-4f7a-b899-1036c5a1b295")
 	)
 	(junction
-		(at 93.98 99.06)
+		(at 111.76 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "06329f18-e836-4ece-984b-3a18dea4276d")
@@ -2201,7 +2580,7 @@
 		(uuid "1abc03e2-c4eb-42f5-bb5f-746a332b9be2")
 	)
 	(junction
-		(at 95.25 99.06)
+		(at 113.03 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1d858a20-78d2-4e7a-aa2e-ebb19c675417")
@@ -2213,7 +2592,7 @@
 		(uuid "22ca18b6-af9c-4200-874a-9a52a3a1775b")
 	)
 	(junction
-		(at 93.98 96.52)
+		(at 111.76 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "25b90160-7ff0-4b3b-8ced-46908c0260a7")
@@ -2223,12 +2602,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "28a52a2d-bc51-435d-ad63-70ca9d34bd37")
-	)
-	(junction
-		(at 130.81 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2cf1b1fc-8f5e-4335-8f34-7bfcb798421a")
 	)
 	(junction
 		(at 114.3 43.18)
@@ -2247,12 +2620,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "363fc95b-4475-4fe0-a5bd-17f142fa1945")
-	)
-	(junction
-		(at 130.81 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3c1f322c-85c6-44a2-8035-345651474be1")
 	)
 	(junction
 		(at 59.69 24.13)
@@ -2333,6 +2700,12 @@
 		(uuid "85c0e108-8367-49f2-ba0a-d2d8f7708bee")
 	)
 	(junction
+		(at 132.08 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8a5d8e8c-dc31-4051-9639-a2986dbcd8f4")
+	)
+	(junction
 		(at 21.59 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2357,7 +2730,7 @@
 		(uuid "c3dbc5f7-2187-4541-b16e-41e7c77a4fb2")
 	)
 	(junction
-		(at 95.25 96.52)
+		(at 113.03 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ccb6d959-8dfa-4c3c-a848-29113e05e5b0")
@@ -2373,6 +2746,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ce6a4f33-3672-40c0-a8a9-09bd5e4db6e9")
+	)
+	(junction
+		(at 132.08 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf7efb6f-415c-4d23-846e-00c88db6efef")
 	)
 	(junction
 		(at 72.39 72.39)
@@ -2480,16 +2859,6 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 96.52) (xy 85.09 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ee2893b-1aa2-4d4e-ba55-f524e6827bf1")
-	)
-	(wire
-		(pts
 			(xy 116.84 69.85) (xy 119.38 69.85)
 		)
 		(stroke
@@ -2520,7 +2889,17 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 96.52) (xy 114.3 96.52)
+			(xy 132.08 53.34) (xy 140.97 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a6db0db-fff2-4af9-b66b-f29baf348214")
+	)
+	(wire
+		(pts
+			(xy 113.03 95.25) (xy 132.08 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2560,7 +2939,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 99.06) (xy 114.3 99.06)
+			(xy 113.03 97.79) (xy 132.08 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2600,7 +2979,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 92.71) (xy 93.98 96.52)
+			(xy 111.76 91.44) (xy 111.76 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2640,7 +3019,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 43.18) (xy 130.81 43.18)
+			(xy 123.19 43.18) (xy 132.08 43.18)
 		)
 		(stroke
 			(width 0)
@@ -2680,7 +3059,17 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 102.87) (xy 96.52 102.87)
+			(xy 101.6 95.25) (xy 102.87 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38f4d3da-ca88-4624-a035-25c043b9bbff")
+	)
+	(wire
+		(pts
+			(xy 113.03 101.6) (xy 114.3 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2710,7 +3099,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 50.8) (xy 139.7 53.34)
+			(xy 140.97 50.8) (xy 140.97 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2760,7 +3149,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 96.52) (xy 95.25 96.52)
+			(xy 111.76 95.25) (xy 113.03 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2830,7 +3219,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 99.06) (xy 95.25 99.06)
+			(xy 111.76 97.79) (xy 113.03 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2840,7 +3229,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 96.52) (xy 93.98 96.52)
+			(xy 107.95 95.25) (xy 111.76 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2920,7 +3309,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 92.71) (xy 95.25 96.52)
+			(xy 113.03 91.44) (xy 113.03 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2980,7 +3369,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 53.34) (xy 130.81 53.34)
+			(xy 123.19 53.34) (xy 132.08 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2990,7 +3379,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 99.06) (xy 93.98 99.06)
+			(xy 107.95 97.79) (xy 111.76 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3010,7 +3399,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 102.87) (xy 115.57 102.87)
+			(xy 132.08 101.6) (xy 133.35 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3040,7 +3429,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 102.87) (xy 86.36 102.87)
+			(xy 102.87 101.6) (xy 104.14 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3130,6 +3519,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 43.18) (xy 140.97 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "704b8b6b-6e55-4aa0-886a-34bcfc8be201")
+	)
+	(wire
+		(pts
 			(xy 130.81 67.31) (xy 130.81 68.58)
 		)
 		(stroke
@@ -3160,7 +3559,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 99.06) (xy 95.25 102.87)
+			(xy 113.03 97.79) (xy 113.03 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3170,7 +3569,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 50.8) (xy 130.81 53.34)
+			(xy 132.08 50.8) (xy 132.08 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3260,7 +3659,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 92.71) (xy 96.52 92.71)
+			(xy 113.03 91.44) (xy 114.3 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3360,33 +3759,13 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 92.71) (xy 115.57 92.71)
+			(xy 132.08 91.44) (xy 133.35 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9313b887-2d29-4e87-823c-b3d046cc6176")
-	)
-	(wire
-		(pts
-			(xy 130.81 43.18) (xy 139.7 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93d25b96-f286-47a4-8e5e-b5b587b8def8")
-	)
-	(wire
-		(pts
-			(xy 130.81 53.34) (xy 139.7 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95361f57-6ce6-4c5b-a18a-d6e09ec237bc")
 	)
 	(wire
 		(pts
@@ -3400,7 +3779,17 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 92.71) (xy 86.36 92.71)
+			(xy 80.01 97.79) (xy 81.28 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9698e4bf-15f3-4111-a6b4-a9f4b31ab514")
+	)
+	(wire
+		(pts
+			(xy 102.87 91.44) (xy 104.14 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3460,23 +3849,13 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 43.18) (xy 130.81 45.72)
+			(xy 132.08 43.18) (xy 132.08 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a3227dcc-1656-437b-8374-db4955e2c87c")
-	)
-	(wire
-		(pts
-			(xy 82.55 99.06) (xy 85.09 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4114729-5f8b-462e-b16a-e75d594aa2f2")
 	)
 	(wire
 		(pts
@@ -3530,7 +3909,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 43.18) (xy 139.7 45.72)
+			(xy 140.97 43.18) (xy 140.97 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3550,7 +3929,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 99.06) (xy 93.98 102.87)
+			(xy 111.76 97.79) (xy 111.76 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3667,6 +4046,16 @@
 			(type default)
 		)
 		(uuid "c31742d8-3b61-4185-b6c2-58d888fad818")
+	)
+	(wire
+		(pts
+			(xy 101.6 97.79) (xy 102.87 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9dbf444-471e-4c94-b051-28adb967f669")
 	)
 	(wire
 		(pts
@@ -3890,6 +4279,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 95.25) (xy 81.28 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f31ef47b-e27d-4d08-a425-b5e90653b0d2")
+	)
+	(wire
+		(pts
 			(xy 60.96 101.6) (xy 63.5 101.6)
 		)
 		(stroke
@@ -3949,7 +4348,7 @@
 		(uuid "febcb513-5ce5-4b54-9e55-c65865722b30")
 	)
 	(label "T1S_d+"
-		(at 104.14 99.06 0)
+		(at 121.92 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3959,7 +4358,7 @@
 		(uuid "726fe421-f5e8-47a0-88be-2c22f7c77178")
 	)
 	(label "T1S_d-"
-		(at 104.14 96.52 0)
+		(at 121.92 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4344,7 +4743,7 @@
 	)
 	(global_label "TRXN"
 		(shape bidirectional)
-		(at 82.55 96.52 180)
+		(at 80.01 95.25 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4354,7 +4753,7 @@
 		)
 		(uuid "a172a8b2-2df5-41f5-b4cc-5eb57d3513df")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 73.6759 96.52 0)
+			(at 71.1359 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4366,7 +4765,7 @@
 	)
 	(global_label "TRXP"
 		(shape bidirectional)
-		(at 82.55 99.06 180)
+		(at 80.01 97.79 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4376,7 +4775,7 @@
 		)
 		(uuid "b2755c3f-a1c7-4b1d-85ad-2ce64d815346")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 73.7364 99.06 0)
+			(at 71.1964 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4454,7 +4853,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
-		(at 85.09 92.71 270)
+		(at 102.87 91.44 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4462,7 +4861,7 @@
 		(dnp no)
 		(uuid "005d51bc-c850-4a9f-8b43-f6ef9922e2ff")
 		(property "Reference" "#PWR010"
-			(at 78.74 92.71 0)
+			(at 96.52 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4471,7 +4870,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 81.28 92.71 0)
+			(at 99.06 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4479,7 +4878,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 92.71 0)
+			(at 102.87 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4488,7 +4887,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 92.71 0)
+			(at 102.87 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4497,7 +4896,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 85.09 92.71 0)
+			(at 102.87 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4867,7 +5266,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 139.7 48.26 0)
+		(at 140.97 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4876,7 +5275,7 @@
 		(fields_autoplaced yes)
 		(uuid "1d81c4f7-30c7-4acb-828a-ac06ec615b75")
 		(property "Reference" "C10"
-			(at 142.24 45.7262 0)
+			(at 143.51 45.7262 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4885,7 +5284,7 @@
 			)
 		)
 		(property "Value" "10nF"
-			(at 142.24 48.2663 0)
+			(at 143.51 48.2663 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -4894,7 +5293,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 139.7 48.26 0)
+			(at 140.97 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4903,7 +5302,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.7 48.26 0)
+			(at 140.97 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4912,7 +5311,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 139.7 48.26 0)
+			(at 140.97 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4921,7 +5320,7 @@
 			)
 		)
 		(property "LCSC" "C15195"
-			(at 139.7 48.26 0)
+			(at 140.97 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4930,7 +5329,7 @@
 			)
 		)
 		(property "Stock" "4779042"
-			(at 139.7 48.26 0)
+			(at 140.97 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4939,7 +5338,7 @@
 			)
 		)
 		(property "Price" "0.005USD"
-			(at 139.7 48.26 0)
+			(at 140.97 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4948,7 +5347,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 139.7 48.26 0)
+			(at 140.97 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4957,7 +5356,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 139.7 48.26 0)
+			(at 140.97 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4966,7 +5365,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 139.7 48.26 0)
+			(at 140.97 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4975,7 +5374,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 139.7 48.26 0)
+			(at 140.97 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4984,7 +5383,7 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 139.7 48.26 0)
+			(at 140.97 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4993,7 +5392,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 139.7 48.26 0)
+			(at 140.97 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5002,7 +5401,7 @@
 			)
 		)
 		(property "Part" "CL05B103KB5NNNC"
-			(at 139.7 48.26 0)
+			(at 140.97 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5011,7 +5410,7 @@
 			)
 		)
 		(property "Voltage Rated" "50V"
-			(at 142.24 50.8063 0)
+			(at 143.51 50.8063 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -5020,7 +5419,7 @@
 			)
 		)
 		(property "Tolerance" "±10%"
-			(at 139.7 48.26 0)
+			(at 140.97 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5029,7 +5428,7 @@
 			)
 		)
 		(property "Capacitance" "10nF"
-			(at 139.7 48.26 0)
+			(at 140.97 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5038,7 +5437,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X7R"
-			(at 139.7 48.26 0)
+			(at 140.97 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5323,8 +5722,133 @@
 		)
 	)
 	(symbol
+		(lib_id "DLW32MH201XK2L:DLW32MH201XK2L")
+		(at 101.6 97.79 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2f9e1ceb-0a0c-4448-b06e-45c102083333")
+		(property "Reference" "FL1"
+			(at 91.44 96.266 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DLW32MH201XK2L"
+			(at 87.884 91.186 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LIB_DLW32MH201XK2L:DLW32MH101XK2L"
+			(at 85.09 2.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=DLW32MH201XK2%23"
+			(at 85.09 -97.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "DLW32MH_K2L Series EMI Suppression Filter 200uH 70mA 50V"
+			(at 101.6 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "2.5"
+			(at 85.09 -297.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "81-DLW32MH201XK2L"
+			(at 85.09 -397.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price Stock" "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/DLW32MH201XK2L?qs=55YtniHzbhAIj13Gqw4npA%3D%3D"
+			(at 85.09 -497.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Murata Electronics"
+			(at 85.09 -597.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "DLW32MH201XK2L"
+			(at 85.09 -697.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9548b69-2741-4793-8823-33948b048fad")
+		)
+		(pin "4"
+			(uuid "88fe5f0d-528f-4fc7-8e62-f95d41a31652")
+		)
+		(pin "3"
+			(uuid "2ff32a40-45fe-452e-b0fc-38be3b0a4bca")
+		)
+		(pin "2"
+			(uuid "b8c5389e-f84a-4cde-bd84-b3c3ebe2a39a")
+		)
+		(instances
+			(project ""
+				(path "/dd86a157-1161-4bb3-93fc-273101ff9b7c"
+					(reference "FL1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDREF")
-		(at 115.57 92.71 90)
+		(at 133.35 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5332,7 +5856,7 @@
 		(dnp no)
 		(uuid "32b9a956-4546-4ff1-94f6-8761ea737ab6")
 		(property "Reference" "#PWR011"
-			(at 121.92 92.71 0)
+			(at 139.7 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5341,7 +5865,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.38 92.71 0)
+			(at 137.16 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5349,7 +5873,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 92.71 0)
+			(at 133.35 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5358,7 +5882,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 92.71 0)
+			(at 133.35 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5367,7 +5891,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 115.57 92.71 0)
+			(at 133.35 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5389,7 +5913,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 90.17 102.87 270)
+		(at 107.95 101.6 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5397,7 +5921,7 @@
 		(dnp no)
 		(uuid "33527f7e-9380-4698-8704-735406d9d130")
 		(property "Reference" "R5"
-			(at 90.424 104.902 90)
+			(at 108.204 103.632 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5406,7 +5930,7 @@
 			)
 		)
 		(property "Value" "10kΩ"
-			(at 90.17 102.87 90)
+			(at 107.95 101.6 90)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -5415,7 +5939,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 90.17 101.092 90)
+			(at 107.95 99.822 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5424,7 +5948,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5433,7 +5957,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5442,7 +5966,7 @@
 			)
 		)
 		(property "LCSC" "C17902"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5451,7 +5975,7 @@
 			)
 		)
 		(property "Stock" "1031548"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5460,7 +5984,7 @@
 			)
 		)
 		(property "Price" "0.006USD"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5469,7 +5993,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5478,7 +6002,7 @@
 			)
 		)
 		(property "Minimum Qty" "15"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5487,7 +6011,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5496,7 +6020,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5505,7 +6029,7 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5514,7 +6038,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5523,7 +6047,7 @@
 			)
 		)
 		(property "Part" "1206W4F1002T5E"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5532,7 +6056,7 @@
 			)
 		)
 		(property "Resistance" "10kΩ"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5541,7 +6065,7 @@
 			)
 		)
 		(property "Power" "250mW"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5550,7 +6074,7 @@
 			)
 		)
 		(property "Type" "Thick Film Resistors"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5559,7 +6083,7 @@
 			)
 		)
 		(property "Overload Voltage Max" "200V"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5568,7 +6092,7 @@
 			)
 		)
 		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5577,7 +6101,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5586,7 +6110,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 90.17 102.87 0)
+			(at 107.95 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6328,7 +6852,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
-		(at 85.09 102.87 270)
+		(at 102.87 101.6 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6336,7 +6860,7 @@
 		(dnp no)
 		(uuid "46e069be-74af-40bc-90ae-f7edae10ed38")
 		(property "Reference" "#PWR09"
-			(at 78.74 102.87 0)
+			(at 96.52 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6345,7 +6869,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 81.28 102.87 0)
+			(at 99.06 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6353,7 +6877,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 102.87 0)
+			(at 102.87 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6362,7 +6886,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 102.87 0)
+			(at 102.87 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6371,7 +6895,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 85.09 102.87 0)
+			(at 102.87 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6589,7 +7113,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 130.81 48.26 0)
+		(at 132.08 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6598,7 +7122,7 @@
 		(fields_autoplaced yes)
 		(uuid "55a2042a-cb56-479d-a19f-a157709e2ae4")
 		(property "Reference" "C11"
-			(at 133.35 45.7262 0)
+			(at 134.62 45.7262 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6607,7 +7131,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 133.35 48.2663 0)
+			(at 134.62 48.2663 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -6616,7 +7140,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 130.81 48.26 0)
+			(at 132.08 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6625,7 +7149,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 130.81 48.26 0)
+			(at 132.08 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6634,7 +7158,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 130.81 48.26 0)
+			(at 132.08 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6643,7 +7167,7 @@
 			)
 		)
 		(property "LCSC" "C307331"
-			(at 130.81 48.26 0)
+			(at 132.08 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6652,7 +7176,7 @@
 			)
 		)
 		(property "Stock" "8389599"
-			(at 130.81 48.26 0)
+			(at 132.08 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6661,7 +7185,7 @@
 			)
 		)
 		(property "Price" "0.008USD"
-			(at 130.81 48.26 0)
+			(at 132.08 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6670,7 +7194,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 130.81 48.26 0)
+			(at 132.08 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6679,7 +7203,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 130.81 48.26 0)
+			(at 132.08 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6688,7 +7212,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 130.81 48.26 0)
+			(at 132.08 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6697,7 +7221,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 130.81 48.26 0)
+			(at 132.08 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6706,7 +7230,7 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 130.81 48.26 0)
+			(at 132.08 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6715,7 +7239,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 130.81 48.26 0)
+			(at 132.08 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6724,7 +7248,7 @@
 			)
 		)
 		(property "Part" "CL05B104KB54PNC"
-			(at 130.81 48.26 0)
+			(at 132.08 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6733,7 +7257,7 @@
 			)
 		)
 		(property "Voltage Rated" "50V"
-			(at 133.35 50.8063 0)
+			(at 134.62 50.8063 0)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -6742,7 +7266,7 @@
 			)
 		)
 		(property "Tolerance" "±10%"
-			(at 130.81 48.26 0)
+			(at 132.08 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6751,7 +7275,7 @@
 			)
 		)
 		(property "Capacitance" "100nF"
-			(at 130.81 48.26 0)
+			(at 132.08 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6760,7 +7284,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X7R"
-			(at 130.81 48.26 0)
+			(at 132.08 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7826,7 +8350,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 90.17 92.71 90)
+		(at 107.95 91.44 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7834,7 +8358,7 @@
 		(dnp no)
 		(uuid "971f3ab7-56c1-482f-8f3e-7b41bebfc4ed")
 		(property "Reference" "R6"
-			(at 89.662 90.678 90)
+			(at 107.442 89.408 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7843,7 +8367,7 @@
 			)
 		)
 		(property "Value" "10kΩ"
-			(at 90.17 92.71 90)
+			(at 107.95 91.44 90)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -7852,7 +8376,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 90.17 94.488 90)
+			(at 107.95 93.218 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7861,7 +8385,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7870,7 +8394,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7879,7 +8403,7 @@
 			)
 		)
 		(property "LCSC" "C17902"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7888,7 +8412,7 @@
 			)
 		)
 		(property "Stock" "1031548"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7897,7 +8421,7 @@
 			)
 		)
 		(property "Price" "0.006USD"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7906,7 +8430,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7915,7 +8439,7 @@
 			)
 		)
 		(property "Minimum Qty" "15"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7924,7 +8448,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7933,7 +8457,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7942,7 +8466,7 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7951,7 +8475,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7960,7 +8484,7 @@
 			)
 		)
 		(property "Part" "1206W4F1002T5E"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7969,7 +8493,7 @@
 			)
 		)
 		(property "Resistance" "10kΩ"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7978,7 +8502,7 @@
 			)
 		)
 		(property "Power" "250mW"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7987,7 +8511,7 @@
 			)
 		)
 		(property "Type" "Thick Film Resistors"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7996,7 +8520,7 @@
 			)
 		)
 		(property "Overload Voltage Max" "200V"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8005,7 +8529,7 @@
 			)
 		)
 		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8014,7 +8538,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8023,7 +8547,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 90.17 92.71 0)
+			(at 107.95 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8048,7 +8572,7 @@
 	)
 	(symbol
 		(lib_id "AVRH10C221KT1R5YA8:AVRH10C221KT1R5YA8")
-		(at 96.52 102.87 0)
+		(at 114.3 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8056,7 +8580,7 @@
 		(dnp no)
 		(uuid "97804cb3-d498-4fff-8176-02e578a0ced5")
 		(property "Reference" "RV1"
-			(at 111.76 104.394 0)
+			(at 129.54 103.124 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8064,7 +8588,7 @@
 			)
 		)
 		(property "Value" "AVRH10C221KT1R5YA8"
-			(at 105.41 106.934 0)
+			(at 123.19 105.664 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8072,7 +8596,7 @@
 			)
 		)
 		(property "Footprint" "LIB_AVRH10C221KT1R5YA8:RESC1005X55N"
-			(at 110.49 199.06 0)
+			(at 128.27 197.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8082,7 +8606,7 @@
 			)
 		)
 		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/protection/voltage/varistor_ctvs/catalog/vpd_automotive_varistors_avr_en.pdf"
-			(at 110.49 299.06 0)
+			(at 128.27 297.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8092,7 +8616,7 @@
 			)
 		)
 		(property "Description" "Chip Varistors / Ceramic Transient Voltage Suppressors, Maximum continuous voltage [DC]=70V, Maximum Clamping Voltage (8/20uS)=400V"
-			(at 96.52 102.87 0)
+			(at 114.3 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8101,7 +8625,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 110.49 499.06 0)
+			(at 128.27 497.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8111,7 +8635,7 @@
 			)
 		)
 		(property "Mouser Part Number" "810-AVRH10C221K1R5YA"
-			(at 110.49 599.06 0)
+			(at 128.27 597.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8121,7 +8645,7 @@
 			)
 		)
 		(property "Mouser Price Stock" "https://www.mouser.co.uk/ProductDetail/TDK/AVRH10C221KT1R5YA8?qs=P1JMDcb91o7%2FqB%252BLJliAkA%3D%3D"
-			(at 110.49 699.06 0)
+			(at 128.27 697.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8131,7 +8655,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "TDK"
-			(at 110.49 799.06 0)
+			(at 128.27 797.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8141,7 +8665,17 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "AVRH10C221KT1R5YA8"
-			(at 110.49 899.06 0)
+			(at 128.27 897.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TDK/AVRH10C221KT1R5YA8?qs=P1JMDcb91o7%2FqB%252BLJliAkA%3D%3D"
+			(at 128.27 697.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8167,7 +8701,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 87.63 99.06 90)
+		(at 105.41 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8175,7 +8709,7 @@
 		(dnp no)
 		(uuid "9fcd4d10-fbb3-441d-8d2b-d336b564c63c")
 		(property "Reference" "C17"
-			(at 84.836 98.044 90)
+			(at 102.616 96.774 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8183,15 +8717,15 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 90.424 98.298 90)
+			(at 108.204 97.028 90)
 			(effects
 				(font
 					(size 0.8 0.8)
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 87.63 99.06 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 105.41 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8200,7 +8734,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 87.63 99.06 0)
+			(at 105.41 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8209,7 +8743,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 87.63 99.06 0)
+			(at 105.41 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8218,7 +8752,7 @@
 			)
 		)
 		(property "LCSC" "C307331"
-			(at 87.63 99.06 0)
+			(at 105.41 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8227,7 +8761,7 @@
 			)
 		)
 		(property "Stock" "8389599"
-			(at 87.63 99.06 0)
+			(at 105.41 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8236,7 +8770,7 @@
 			)
 		)
 		(property "Price" "0.008USD"
-			(at 87.63 99.06 0)
+			(at 105.41 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8245,7 +8779,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 87.63 99.06 0)
+			(at 105.41 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8254,7 +8788,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 87.63 99.06 0)
+			(at 105.41 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8263,7 +8797,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 87.63 99.06 0)
+			(at 105.41 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8272,7 +8806,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 87.63 99.06 0)
+			(at 105.41 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8281,7 +8815,7 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 87.63 99.06 0)
+			(at 105.41 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8290,7 +8824,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 87.63 99.06 0)
+			(at 105.41 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8299,7 +8833,7 @@
 			)
 		)
 		(property "Part" "CL05B104KB54PNC"
-			(at 87.63 99.06 0)
+			(at 105.41 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8308,7 +8842,7 @@
 			)
 		)
 		(property "Voltage Rated" "50V"
-			(at 89.916 99.822 90)
+			(at 107.696 98.552 90)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -8316,7 +8850,7 @@
 			)
 		)
 		(property "Tolerance" "±10%"
-			(at 87.63 99.06 0)
+			(at 105.41 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8325,7 +8859,7 @@
 			)
 		)
 		(property "Capacitance" "100nF"
-			(at 87.63 99.06 0)
+			(at 105.41 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8334,7 +8868,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X7R"
-			(at 87.63 99.06 0)
+			(at 105.41 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8481,6 +9015,26 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/LAN8651B1-E-LMX?qs=HoCaDK9Nz5cTGz8XEJbodA%3D%3D"
+			(at 59.69 846.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 59.69 1046.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
 		(pin "17"
 			(uuid "8b8801d8-8f64-44c5-bb95-73fa0e282bc6")
 		)
@@ -8590,8 +9144,9 @@
 		)
 	)
 	(symbol
+		(lib_name "AVRH10C221KT1R5YA8_1")
 		(lib_id "AVRH10C221KT1R5YA8:AVRH10C221KT1R5YA8")
-		(at 96.52 92.71 0)
+		(at 114.3 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8599,7 +9154,7 @@
 		(dnp no)
 		(uuid "b98f3b37-39fd-477c-8af5-82155f38a136")
 		(property "Reference" "RV2"
-			(at 111.76 94.234 0)
+			(at 129.54 92.964 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8607,7 +9162,7 @@
 			)
 		)
 		(property "Value" "AVRH10C221KT1R5YA8"
-			(at 105.41 88.646 0)
+			(at 123.19 87.376 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8615,7 +9170,7 @@
 			)
 		)
 		(property "Footprint" "LIB_AVRH10C221KT1R5YA8:RESC1005X55N"
-			(at 110.49 188.9 0)
+			(at 128.27 187.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8625,7 +9180,7 @@
 			)
 		)
 		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/protection/voltage/varistor_ctvs/catalog/vpd_automotive_varistors_avr_en.pdf"
-			(at 110.49 288.9 0)
+			(at 128.27 287.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8635,7 +9190,7 @@
 			)
 		)
 		(property "Description" "Chip Varistors / Ceramic Transient Voltage Suppressors, Maximum continuous voltage [DC]=70V, Maximum Clamping Voltage (8/20uS)=400V"
-			(at 96.52 92.71 0)
+			(at 114.3 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8644,7 +9199,7 @@
 			)
 		)
 		(property "Height" "0.55"
-			(at 110.49 488.9 0)
+			(at 128.27 487.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8654,7 +9209,7 @@
 			)
 		)
 		(property "Mouser Part Number" "810-AVRH10C221K1R5YA"
-			(at 110.49 588.9 0)
+			(at 128.27 587.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8664,7 +9219,7 @@
 			)
 		)
 		(property "Mouser Price Stock" "https://www.mouser.co.uk/ProductDetail/TDK/AVRH10C221KT1R5YA8?qs=P1JMDcb91o7%2FqB%252BLJliAkA%3D%3D"
-			(at 110.49 688.9 0)
+			(at 128.27 687.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8674,7 +9229,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "TDK"
-			(at 110.49 788.9 0)
+			(at 128.27 787.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8684,7 +9239,17 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "AVRH10C221KT1R5YA8"
-			(at 110.49 888.9 0)
+			(at 128.27 887.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TDK/AVRH10C221KT1R5YA8?qs=P1JMDcb91o7%2FqB%252BLJliAkA%3D%3D"
+			(at 128.27 687.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9754,7 +10319,7 @@
 	)
 	(symbol
 		(lib_id "power:GNDREF")
-		(at 115.57 102.87 90)
+		(at 133.35 101.6 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9762,7 +10327,7 @@
 		(dnp no)
 		(uuid "e10d9742-0d25-4520-a12a-c27918420b15")
 		(property "Reference" "#PWR012"
-			(at 121.92 102.87 0)
+			(at 139.7 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9771,7 +10336,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.38 102.87 0)
+			(at 137.16 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9779,7 +10344,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 102.87 0)
+			(at 133.35 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9788,7 +10353,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 102.87 0)
+			(at 133.35 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9797,7 +10362,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
-			(at 115.57 102.87 0)
+			(at 133.35 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9819,7 +10384,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 87.63 96.52 90)
+		(at 105.41 95.25 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9827,7 +10392,7 @@
 		(dnp no)
 		(uuid "ead5e5d0-f32f-412d-b4cd-b83f13f39be9")
 		(property "Reference" "C16"
-			(at 84.836 95.504 90)
+			(at 102.616 94.234 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9835,15 +10400,15 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 90.678 95.758 90)
+			(at 108.458 94.488 90)
 			(effects
 				(font
 					(size 0.8 0.8)
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 87.63 96.52 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9852,7 +10417,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 87.63 96.52 0)
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9861,7 +10426,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 87.63 96.52 0)
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9870,7 +10435,7 @@
 			)
 		)
 		(property "LCSC" "C307331"
-			(at 87.63 96.52 0)
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9879,7 +10444,7 @@
 			)
 		)
 		(property "Stock" "8389599"
-			(at 87.63 96.52 0)
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9888,7 +10453,7 @@
 			)
 		)
 		(property "Price" "0.008USD"
-			(at 87.63 96.52 0)
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9897,7 +10462,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 87.63 96.52 0)
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9906,7 +10471,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 87.63 96.52 0)
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9915,7 +10480,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 87.63 96.52 0)
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9924,7 +10489,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 87.63 96.52 0)
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9933,7 +10498,7 @@
 			)
 		)
 		(property "Category" "Capacitors,Multilayer Ceramic Capacitors MLCC - SMD/SMT"
-			(at 87.63 96.52 0)
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9942,7 +10507,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 87.63 96.52 0)
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9951,7 +10516,7 @@
 			)
 		)
 		(property "Part" "CL05B104KB54PNC"
-			(at 87.63 96.52 0)
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9960,7 +10525,7 @@
 			)
 		)
 		(property "Voltage Rated" "50V"
-			(at 89.916 97.282 90)
+			(at 107.696 96.012 90)
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -9968,7 +10533,7 @@
 			)
 		)
 		(property "Tolerance" "±10%"
-			(at 87.63 96.52 0)
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9977,7 +10542,7 @@
 			)
 		)
 		(property "Capacitance" "100nF"
-			(at 87.63 96.52 0)
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9986,7 +10551,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "X7R"
-			(at 87.63 96.52 0)
+			(at 105.41 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10077,7 +10642,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 119.38 96.52 0)
+		(at 137.16 95.25 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10086,7 +10651,7 @@
 		(dnp no)
 		(uuid "f80c858e-17ca-4cc9-a397-a64483dd631c")
 		(property "Reference" "J2"
-			(at 119.634 98.044 0)
+			(at 137.414 96.774 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10095,7 +10660,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Pin"
-			(at 120.65 96.5201 0)
+			(at 138.43 95.2501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10105,7 +10670,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 119.38 96.52 0)
+			(at 137.16 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10114,7 +10679,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 119.38 96.52 0)
+			(at 137.16 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10123,7 +10688,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 119.38 96.52 0)
+			(at 137.16 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)

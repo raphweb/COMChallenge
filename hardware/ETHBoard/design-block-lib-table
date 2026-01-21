@@ -1,5 +1,0 @@
-(design_block_lib_table
-  (version 7)
-  (lib (name "LIB_LAN8651B1-E_LMX")(type "KiCad")(uri "${KIPRJMOD}/LIB_LAN8651B1-E_LMX")(options "")(descr ""))
-  (lib (name "LIB_AVRH10C221KT1R5YA8")(type "KiCad")(uri "${KIPRJMOD}/LIB_AVRH10C221KT1R5YA8")(options "")(descr ""))
-)
