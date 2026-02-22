@@ -2380,7 +2380,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Capacitor_SMD_AKL:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 84.7852 48.26 0)
 			(effects
 				(font
@@ -2517,7 +2517,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 35.56 40.64 0)
 			(effects
 				(font
@@ -2808,7 +2808,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 77.47 19.05 0)
 			(effects
 				(font
@@ -2940,7 +2940,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Capacitor_SMD_AKL:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 31.75 18.0848 0)
 			(effects
 				(font
@@ -3078,7 +3078,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 55.88 19.05 0)
 			(effects
 				(font
@@ -3148,7 +3148,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 25.4 40.64 0)
 			(effects
 				(font
@@ -3207,7 +3207,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "~"
 			(at 17.145 31.75 0)
 			(effects
 				(font

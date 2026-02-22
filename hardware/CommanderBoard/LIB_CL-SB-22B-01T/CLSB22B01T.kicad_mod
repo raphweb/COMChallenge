@@ -243,13 +243,13 @@
 	(embedded_fonts no)
 	(model "CL-SB-22B-01T.step"
 		(offset
-			(xyz 0 0 3.454399948)
+			(xyz 0 0 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -90 0 0)
+			(xyz 0 0 0)
 		)
 	)
 )
