@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "LIB_CL-SB-12B-01T")(type "KiCad")(uri "${KIPRJMOD}/LIB_CL-SB-12B-01T")(options "")(descr ""))
+  (lib (name "LIB_CL-SB-22B-01T")(type "KiCad")(uri "${KIPRJMOD}/LIB_CL-SB-22B-01T")(options "")(descr ""))
+  (lib (name "LIB_CL-SB-23B-01T")(type "KiCad")(uri "${KIPRJMOD}/LIB_CL-SB-23B-01T")(options "")(descr ""))
+)

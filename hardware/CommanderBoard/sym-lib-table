@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "CL-SB-12B-01T")(type "KiCad")(uri "${KIPRJMOD}/LIB_CL-SB-12B-01T/CL-SB-12B-01T.kicad_sym")(options "")(descr ""))
+  (lib (name "CL-SB-22B-01T")(type "KiCad")(uri "${KIPRJMOD}/LIB_CL-SB-22B-01T/CL-SB-22B-01T.kicad_sym")(options "")(descr ""))
+  (lib (name "CL-SB-23B-01T")(type "KiCad")(uri "${KIPRJMOD}/LIB_CL-SB-23B-01T/CL-SB-23B-01T.kicad_sym")(options "")(descr ""))
+)

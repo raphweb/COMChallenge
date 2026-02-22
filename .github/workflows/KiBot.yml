@@ -1,4 +1,4 @@
-name: "KiCad CI/CD for COMChallange BaseBoard"
+name: "KiCad CI/CD for COMChallange boards"
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the main branch
@@ -8,13 +8,31 @@ on:
       - 'hardware/BaseBoard/*.sch'
       - 'hardware/BaseBoard/*.kicad_pcb'
       - 'hardware/BaseBoard/*.kibot.yaml'
-      - '.github/workflows/BaseBoard.yml'
+      - 'hardware/CommanderBoard/*.sch'
+      - 'hardware/CommanderBoard/*.kicad_pcb'
+      - 'hardware/CommanderBoard/*.kibot.yaml'
+      - 'hardware/ETHBoard/*.sch'
+      - 'hardware/ETHBoard/*.kicad_pcb'
+      - 'hardware/ETHBoard/*.kibot.yaml'
+      - 'hardware/LINBoard/*.sch'
+      - 'hardware/LINBoard/*.kicad_pcb'
+      - 'hardware/LINBoard/*.kibot.yaml'
+      - '.github/workflows/KiBot.yml'
   pull_request:
     paths:
       - 'hardware/BaseBoard/*.sch'
       - 'hardware/BaseBoard/*.kicad_pcb'
       - 'hardware/BaseBoard/*.kibot.yaml'
-      - '.github/workflows/BaseBoard.yml'
+      - 'hardware/CommanderBoard/*.sch'
+      - 'hardware/CommanderBoard/*.kicad_pcb'
+      - 'hardware/CommanderBoard/*.kibot.yaml'
+      - 'hardware/ETHBoard/*.sch'
+      - 'hardware/ETHBoard/*.kicad_pcb'
+      - 'hardware/ETHBoard/*.kibot.yaml'
+      - 'hardware/LINBoard/*.sch'
+      - 'hardware/LINBoard/*.kicad_pcb'
+      - 'hardware/LINBoard/*.kibot.yaml'
+      - '.github/workflows/KiBot.yml'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
