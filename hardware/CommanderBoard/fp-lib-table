@@ -3,4 +3,5 @@
   (lib (name "LIB_CL-SB-12B-01T")(type "KiCad")(uri "${KIPRJMOD}/LIB_CL-SB-12B-01T")(options "")(descr ""))
   (lib (name "LIB_CL-SB-22B-01T")(type "KiCad")(uri "${KIPRJMOD}/LIB_CL-SB-22B-01T")(options "")(descr ""))
   (lib (name "LIB_CL-SB-23B-01T")(type "KiCad")(uri "${KIPRJMOD}/LIB_CL-SB-23B-01T")(options "")(descr ""))
+  (lib (name "LIB_THB001P")(type "KiCad")(uri "${KIPRJMOD}/LIB_THB001P")(options "")(descr ""))
 )
