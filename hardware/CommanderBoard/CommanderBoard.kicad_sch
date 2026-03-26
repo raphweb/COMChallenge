@@ -13157,7 +13157,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "THB001P"
+		(property "Footprint" "LIB_THB001P:THB001P"
 			(at 101.6 182.55 0)
 			(effects
 				(font
@@ -14545,7 +14545,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "THB001P"
+		(property "Footprint" "LIB_THB001P:THB001P"
 			(at 101.6 213.03 0)
 			(effects
 				(font
