@@ -1,7 +1,5 @@
-#include "esp32-hal-gpio.h"
 #include <Arduino.h>
 #include <ESP32AnalogRead.h>
-#include <cstdint>
 
 #define LOWER_THRESHHOLD 1000
 #define UPPER_THRESHHOLD 3000
@@ -11,25 +9,25 @@ ESP32AnalogRead s1v(16), s1h(17), s2v(8), s2h(3);
 const char* calculateDirection(uint16_t h, uint16_t v) {
   if (h < LOWER_THRESHHOLD) {
     if (v < LOWER_THRESHHOLD) {
-      return "⇙";
+      return "🡿";
     } else if (v > UPPER_THRESHHOLD) {
-      return "⇖";
+      return "🡼";
     } else {
-      return "⇐";
+      return "🡸";
     }
   } else if (h > UPPER_THRESHHOLD) {
     if (v < LOWER_THRESHHOLD) {
-      return "⇘";
+      return "🡾";
     } else if (v > UPPER_THRESHHOLD) {
-      return "⇗";
+      return "🡽";
     } else {
-      return "⇒";
+      return "🡺";
     }
   } else {
     if (v < LOWER_THRESHHOLD) {
-      return "⇓";
+      return "🡻";
     } else if (v > UPPER_THRESHHOLD) {
-      return "⇑";
+      return "🡹";
     } else {
       return "·";
     }
