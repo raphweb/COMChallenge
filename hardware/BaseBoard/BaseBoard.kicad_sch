@@ -3168,6 +3168,12 @@
 		(uuid "105dca24-8bfa-49ea-8f8b-44e02568f7c9")
 	)
 	(junction
+		(at 180.34 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "249407c7-70e0-4a04-b973-7f0e27e378d3")
+	)
+	(junction
 		(at 107.95 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3216,12 +3222,6 @@
 		(uuid "4c5d47cb-2378-44f0-b225-648fa5d895f8")
 	)
 	(junction
-		(at 180.34 34.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4fae4b9e-5ea3-499b-a372-954d2e0f40bf")
-	)
-	(junction
 		(at 62.23 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3268,12 +3268,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "72dc377c-95d3-4b11-b40f-6a3666404acc")
-	)
-	(junction
-		(at 180.34 24.13)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7eaf6e32-aef9-4e92-b8ce-69d17c5b4a7c")
 	)
 	(junction
 		(at 180.34 41.91)
@@ -3376,12 +3370,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cdab4fce-e716-4de0-acab-cc4fc5936d3b")
-	)
-	(junction
-		(at 180.34 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dc8c7857-c20b-4f19-a264-7be410ead1f4")
 	)
 	(junction
 		(at 62.23 101.6)
@@ -4113,16 +4101,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 24.13) (xy 180.34 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12b17c4a-aeaa-442b-baff-cfbaa0200480")
-	)
-	(wire
-		(pts
 			(xy 54.61 55.88) (xy 54.61 54.61)
 		)
 		(stroke
@@ -4300,16 +4278,6 @@
 			(type default)
 		)
 		(uuid "1d3ac5c2-b5ea-47bb-99e1-68a7d979911b")
-	)
-	(wire
-		(pts
-			(xy 170.18 29.21) (xy 171.45 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d49e0f9-d17f-4589-92bf-8c54cb959fe3")
 	)
 	(wire
 		(pts
@@ -4530,16 +4498,6 @@
 			(type default)
 		)
 		(uuid "28a61b28-e3e4-45b6-aae5-a2e64263b712")
-	)
-	(wire
-		(pts
-			(xy 180.34 22.86) (xy 180.34 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28d7589e-bf1f-4087-a6f9-f0b7cd76dc36")
 	)
 	(wire
 		(pts
@@ -5130,16 +5088,6 @@
 			(type default)
 		)
 		(uuid "46958b6f-fe15-439f-8e64-96f7e4c19213")
-	)
-	(wire
-		(pts
-			(xy 180.34 34.29) (xy 180.34 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46967eec-7d45-4051-ab9e-bbc64b83790a")
 	)
 	(wire
 		(pts
@@ -6553,16 +6501,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 24.13) (xy 171.45 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9934412b-5d28-4376-9931-bbb883b546d6")
-	)
-	(wire
-		(pts
 			(xy 21.59 27.94) (xy 24.13 27.94)
 		)
 		(stroke
@@ -7113,6 +7051,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 34.29) (xy 181.61 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba1e96ee-ecf8-4d52-9510-c5f784fb3e50")
+	)
+	(wire
+		(pts
 			(xy 59.69 148.59) (xy 62.23 148.59)
 		)
 		(stroke
@@ -7270,16 +7218,6 @@
 			(type default)
 		)
 		(uuid "c078a21c-1c5a-401c-aded-170708235720")
-	)
-	(wire
-		(pts
-			(xy 179.07 24.13) (xy 180.34 24.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0f82ce8-7799-491f-a98a-baac91be4ce1")
 	)
 	(wire
 		(pts
@@ -7723,16 +7661,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 34.29) (xy 181.61 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1c4e89d-dd0d-4b68-a71b-044c0a5960d5")
-	)
-	(wire
-		(pts
 			(xy 139.7 161.29) (xy 139.7 160.02)
 		)
 		(stroke
@@ -7850,16 +7778,6 @@
 			(type default)
 		)
 		(uuid "e7255766-1e19-4995-8eee-e67303f63e80")
-	)
-	(wire
-		(pts
-			(xy 179.07 29.21) (xy 180.34 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7564067-453c-42f9-ad8e-ab28958f7882")
 	)
 	(wire
 		(pts
@@ -9347,28 +9265,6 @@
 			)
 		)
 	)
-	(global_label "I2C_SDA"
-		(shape input)
-		(at 170.18 29.21 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9dacd3c7-2dac-4c18-b652-b433171fe9b7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 159.5748 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "BUS1_L"
 		(shape input)
 		(at 33.02 162.56 180)
@@ -9426,28 +9322,6 @@
 		(uuid "abcda330-195c-4807-8317-538d9b6de97c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 95.1676 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "I2C_SCL"
-		(shape input)
-		(at 170.18 24.13 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "aea0111b-794c-4bfa-bbff-a79ecb26f2c9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 159.6353 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11762,73 +11636,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 175.26 29.21 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4b1bf084-8eea-4fcd-8b07-15e711f1de24")
-		(property "Reference" "R2"
-			(at 175.26 31.496 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 175.26 29.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 175.26 30.988 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 175.26 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 175.26 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "35a41f84-6057-41f3-89a0-db464f81f441")
-		)
-		(pin "1"
-			(uuid "9460d57f-3137-480b-a1e6-846aeb3d7bf6")
-		)
-		(instances
-			(project "BaseBoard"
-				(path "/10c9b28d-d236-4c9d-afc8-498abc1c716d"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDREF")
 		(at 19.05 134.62 270)
 		(unit 1)
@@ -14126,7 +13933,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 180.34 22.86 0)
+		(at 180.34 34.29 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14135,7 +13942,7 @@
 		(dnp no)
 		(uuid "8e83e27a-a4bc-43c0-bf6b-5b4cba16e37b")
 		(property "Reference" "#FLG02"
-			(at 180.34 20.955 0)
+			(at 180.34 32.385 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14144,7 +13951,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 180.34 17.78 0)
+			(at 180.34 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14152,7 +13959,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 22.86 0)
+			(at 180.34 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14161,7 +13968,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 22.86 0)
+			(at 180.34 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14170,7 +13977,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 180.34 22.86 0)
+			(at 180.34 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17278,73 +17085,6 @@
 			(project ""
 				(path "/10c9b28d-d236-4c9d-afc8-498abc1c716d"
 					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 175.26 24.13 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f4bcdfc7-0dfa-46db-bd60-d85f429e734b")
-		(property "Reference" "R1"
-			(at 175.26 26.416 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 175.26 24.13 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 175.26 25.908 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 175.26 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 175.26 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a5dda0f9-d948-407e-8779-9b2637c84907")
-		)
-		(pin "1"
-			(uuid "30c6326a-aa92-4b14-9432-795a2b00c3aa")
-		)
-		(instances
-			(project "BaseBoard"
-				(path "/10c9b28d-d236-4c9d-afc8-498abc1c716d"
-					(reference "R1")
 					(unit 1)
 				)
 			)
