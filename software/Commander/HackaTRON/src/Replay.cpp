@@ -2,12 +2,12 @@
 #include <DisplayGame.hpp>
 #include <cstdint>
 
-std::string Replay::gameToReplay;
+String* Replay::gameToReplay;
 ThumbStick* Replay::st2;
 MenuNode* Replay::returnMenu;
 
 frame Replay::buffer[MAX_FRAMES_PER_READ*sizeof(frame)] = {0};
-uint16_t Replay::currentFrame = 0;
+uint16_t Replay::currentFrameIndex = 0;
 uint16_t Replay::lastFrame = 0;
 CANMessage* Replay::currentGF = nullptr;
 File Replay::currentGameDir;
@@ -19,9 +19,9 @@ ESP32Timer* Replay::iTimer;
 
 void Replay::setup(GlobalState* context) {
     returnMenu = context->curMenu->parent;
-    gameToReplay = "/" + context->curMenu->label;
+    gameToReplay = new String(String("/") + *context->curMenu->label);
     st2 = context->st2;
-    currentFrame = 0;
+    currentFrameIndex = 0;
     lastFrame = 0;
     currentGameDir = {};
     currentGameFile = {};
@@ -31,6 +31,9 @@ void Replay::setup(GlobalState* context) {
     iTimer->setInterval(1500, onTimer);
     iTimer->disableTimer();
     DisplayGame::init(context);
+    if (currentGF) {
+        delete currentGF;
+    }
     currentGF = new CANMessage();
 }
 
@@ -55,12 +58,13 @@ MenuNode* Replay::loop() {
             speedFactor *= 2;
         }
     }
+    iTimer->disableTimer();
     boolean firstTime = false;
     if ((!currentGameFile || currentGameFile.position() == 0) && lastFrame == 0) {
         // start new file read
-        log_d("Loading game '%s'.", gameToReplay.c_str());
         if (!currentGameFile) {
-            currentGameFile = LittleFS.open(gameToReplay.c_str());
+            log_d("Loading game '%s'.", gameToReplay->c_str());
+            currentGameFile = LittleFS.open(gameToReplay->c_str());
             if (currentGameFile.isDirectory()) {
                 currentGameDir = currentGameFile;
                 currentGameFile = currentGameDir.openNextFile();
@@ -70,46 +74,45 @@ MenuNode* Replay::loop() {
         lastFrame = len/sizeof(frame);
         log_i("Loaded game '%s' with size %d and replaying it.", currentGameFile.name(), len);
         firstTime = true;
-        currentFrame = 0;
+        currentFrameIndex = 0;
     }
-    if (currentGameFile && currentFrame % (MAX_FRAMES_PER_READ/2) == 0 && currentGameFile.position() / sizeof(frame) == currentFrame) {
-        iTimer->disableTimer();
+    if (currentGameFile && currentFrameIndex % (MAX_FRAMES_PER_READ/2) == 0 && currentGameFile.position() / sizeof(frame) == currentFrameIndex) {
         size_t remaining = min(lastFrame*sizeof(frame) - currentGameFile.position(), (MAX_FRAMES_PER_READ/2)*sizeof(frame));
         log_d("Reading next %d bytes.", remaining);
-        currentGameFile.read((uint8_t *)&buffer[currentFrame % MAX_FRAMES_PER_READ], remaining);
+        currentGameFile.read((uint8_t *)&buffer[currentFrameIndex%MAX_FRAMES_PER_READ], remaining);
         if (firstTime) {
-            currentFrame = 0;
             parsePacket();
-            currentFrame = 1;
+            currentFrameIndex = 1;
         }
         if (!currentGameFile.available()) {
             if (currentGameDir) {
+                currentGameFile.close();
                 currentGameFile = currentGameDir.openNextFile();
                 if (!currentGameFile) {
-                log_d("Starting again in directory.");
-                currentGameDir.seekDir(0);
-                currentGameFile = currentGameDir.openNextFile();
+                    log_d("Starting again in directory.");
+                    currentGameDir.rewindDirectory();
+                    currentGameFile = currentGameDir.openNextFile();
                 }
             } else {
                 currentGameFile.seek(0);
             }
             log_d("Closed file.");
         }
-        iTimer->enableTimer();
-        log_d("Enabling the timer.");
     }
+    iTimer->enableTimer();
+    log_d("Enabling the timer.");
     DisplayGame::updatedDisplay();
     return nullptr;
 }
 
 int Replay::parsePacket() {
-    log_d("Starting to read at position: %d", currentFrame);
-    currentGF->id = buffer[currentFrame%MAX_FRAMES_PER_READ].data[0];
-    currentGF->id |= ((uint16_t)buffer[currentFrame%MAX_FRAMES_PER_READ].data[1] & 0x7) << 8;
-    currentGF->len = (buffer[currentFrame%MAX_FRAMES_PER_READ].data[1] & 0xF0) >> 4;
-    for(uint8_t i = 0; i < 8; i++)
-        currentGF->data[i] = buffer[currentFrame%MAX_FRAMES_PER_READ].data[2+i];
-    log_buf_d(currentGF.data, 8);
+    log_d("Starting to read at position: %d", currentFrameIndex);
+    frame currentFrame = buffer[currentFrameIndex%MAX_FRAMES_PER_READ];
+    currentGF->id = currentFrame.data[0];
+    currentGF->id |= ((uint16_t)currentFrame.data[1] & 0x7) << 8;
+    currentGF->len = (currentFrame.data[1] & 0xF0) >> 4;
+    MEMCPY(currentGF->data, &currentFrame.data[2], currentGF->len);
+    log_buf_d(currentGF->data, currentGF->len);
     return 1;
 }
 
@@ -144,24 +147,24 @@ bool IRAM_ATTR Replay::onTimer(void *timerNo) {
     }
     // called every 10ms
     if (currentGF->id == 0x050 && iCtr < speedFactor ||   // wait 32*1.5ms = 48ms before sending next game state (frame id 0x050)
-        currentFrame > lastFrame && iCtr < (speedFactor << 7)) {  // wait 4096*1.5ms = ~6s before starting next game
+        currentFrameIndex > lastFrame && iCtr < (speedFactor << 7)) {  // wait 4096*1.5ms = ~6s before starting next game
         iCtr++;
     } else {
-        if (currentGF->id == 0x050 || currentFrame > lastFrame) {
+        if (currentGF->id == 0x050 || currentFrameIndex > lastFrame) {
             // reset counter if we send next game state or start next game
             iCtr = 0;
         }
-        if (currentFrame > lastFrame) {
+        if (currentFrameIndex > lastFrame) {
             // start next game
             iTimer->disableTimer();
-            currentFrame = 0;
+            currentFrameIndex = 0;
             lastFrame = 0;
             return true;
         }
         // "send" next game state (i.e. call the callback function to process frames)
         DisplayGame::processFrame(*currentGF);
         parsePacket(); // decode next packet from the record file
-        currentFrame++;
+        currentFrameIndex++;
     }
     return true;
 }

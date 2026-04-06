@@ -10,10 +10,9 @@
 #include <cstdint>
 #include <MatrixPanel.hpp>
 #include <map>
-#include <string>
 
 struct MenuNode {
-    const std::string label;
+    const String* const label;
     uint8_t lastKidIndex;
     std::vector<struct MenuNode*>* const kids;
     MenuNode* const parent;
@@ -22,23 +21,23 @@ struct MenuNode {
 
     // for root node of menu
     MenuNode(std::function<void(GlobalState*)> _setupFunction, std::function<MenuNode*()> _loopFunction):
-        label("main"),
+        label(new String("main")),
         lastKidIndex(0),
         kids(new std::vector<MenuNode*>),
         parent(nullptr),
         setup(_setupFunction),
         loop(_loopFunction) {}
     
-    MenuNode(const std::string& _label, MenuNode* _parent, std::function<void(GlobalState*)> _setupFunction, std::function<MenuNode*()> _loopFunction):
-        label(_label),
+    MenuNode(const char* _label, MenuNode* _parent, std::function<void(GlobalState*)> _setupFunction, std::function<MenuNode*()> _loopFunction):
+        label(new String(_label)),
         lastKidIndex(0),
         kids(nullptr),
         parent(_parent),
         setup(_setupFunction),
         loop(_loopFunction) {}
 
-    MenuNode(const std::string& _label, MenuNode* _parent):
-        label(_label),
+    MenuNode(const char* _label, MenuNode* _parent):
+        label(new String(_label)),
         lastKidIndex(0),
         kids(new std::vector<MenuNode*>),
         parent(_parent),

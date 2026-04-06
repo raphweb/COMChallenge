@@ -5,8 +5,17 @@
 #include <ACAN_ESP32.h>
 #include <ACAN_ESP32_Settings.h>
 #include <LittleFS.h>
-#include <MatrixPanel.hpp>
 
+#if defined(CORE_DEBUG_LEVEL) && (CORE_DEBUG_LEVEL > 0)
+#define SETUP_SERIAL_CONSOLE \
+  esp_rom_install_uart_printf();\
+  delay(200);\
+  log_printf(ARDUHAL_LOG_COLOR_I "[%6u][ ][%s:%u] %s(): Started serial log." ARDUHAL_LOG_RESET_COLOR "\r\n", (unsigned long) (esp_timer_get_time() / 1000ULL), pathToFileName(__FILE__), __LINE__, __FUNCTION__);
+#else
+#define SETUP_SERIAL_CONSOLE
+#endif
+
+#include <MatrixPanel.hpp>
 #include <MainMenu.hpp>
 #include <ProbeNodes.hpp>
 #include <Replay.hpp>
@@ -49,6 +58,7 @@ void fillMenu() {
 }
 
 void setup() {
+  SETUP_SERIAL_CONSOLE
   // start LittleFS
   if(!LittleFS.begin(true)) {
     log_e("LittleFS Mount Failed");

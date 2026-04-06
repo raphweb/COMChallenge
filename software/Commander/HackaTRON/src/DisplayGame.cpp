@@ -23,7 +23,7 @@ void DisplayGame::processFrame(CANMessage& frame) {
         case 0x100: // JOIN - ignore this
             break;
         case 0x110: // PLAYER - get the playerID
-            if (frame.len == 5) {
+            if (frame.len == 5 && !players[frame.data[4]]) {
                 players[frame.data[4]] = new PlayerInfo(frame.data[4]);
             }
             break;
@@ -32,9 +32,9 @@ void DisplayGame::processFrame(CANMessage& frame) {
             if (players[frame.data[0]]) {
                 PlayerInfo* player = players[frame.data[0]];
                 player->nameLength = frame.data[1];
-                player->name = "";
-                for(uint i = 0; i < min((uint8_t)(frame.len-2), player->nameLength); i++)
-                    player->name += (char)frame.data[i+2];
+                player->name->clear();
+                uint8_t len2add = min((uint8_t)(frame.len-2), player->nameLength);
+                player->name->concat(reinterpret_cast<const char*>(&frame.data[2]), len2add);
                 if (player->nameLength <= 6) {
                     gameEvent |= PLAYER_RENAMED;
                     gameEventInfo = player->playerID;
@@ -45,11 +45,13 @@ void DisplayGame::processFrame(CANMessage& frame) {
             log_buf_d(frame.data, frame.len);
             if (players[frame.data[0]]) {
                 PlayerInfo* player = players[frame.data[0]];
-                for(uint i = 0; i < frame.len-1; i++)
-                    player->name += (char)frame.data[i+1];
-                if (player->nameLength <= player->name.length()) {
-                    gameEvent |= PLAYER_RENAMED;
-                    gameEventInfo = player->playerID;
+                if (player->nameLength > player->name->length()) {
+                    uint8_t len2add = min((uint8_t)(frame.len-1), (uint8_t)(player->nameLength - player->name->length()));
+                    player->name->concat(reinterpret_cast<const char*>(&frame.data[1]), len2add);
+                    if (player->nameLength <= player->name->length()) {
+                        gameEvent |= PLAYER_RENAMED;
+                        gameEventInfo = player->playerID;
+                    }
                 }
             }
             break;
@@ -100,7 +102,7 @@ void DisplayGame::processFrame(CANMessage& frame) {
 void DisplayGame::updatedDisplay() {
     if (gameEvent & PLAYER_RENAMED) {
         // a player was renamed
-        drawInfoPanelPlayerJoined(XOFFSET, players[gameEventInfo]->name);
+        drawInfoPanelPlayerJoined(XOFFSET, *players[gameEventInfo]->name);
         gameEvent &= (~PLAYER_RENAMED);
         gameEventInfo = 0;
     }
@@ -225,7 +227,7 @@ void DisplayGame::drawInfoPanelPlayerListInGamePlayer(int16_t xOffset, uint8_t p
   dma_display->setCursor(xOffset, 20 + 10 * playerNum);
 #endif
   dma_display->setTextColor(color);
-  dma_display->print(currentGame->player[playerNum]->name);
+  dma_display->print(*currentGame->player[playerNum]->name);
 }
 
 void DisplayGame::drawInfoPanelPlayerListInNewGame(int16_t xOffset) {
@@ -248,7 +250,7 @@ void DisplayGame::drawInfoPanelGameResults(int16_t xOffset) {
     uint8_t scLen = dma_display->printf("%d ", currentGame->score[i]);
     dma_display->setCursor(dma_display->getCursorX() - 1, dma_display->getCursorY());
     dma_display->setTextColor(activePlayerColorsGBSwitched[i % PLAYERS_IN_GAME]);
-    const String* playerName = &currentGame->player[i]->name;
+    const String* playerName = currentGame->player[i]->name;
 #if not defined(PANEL_GAME_STATS_WIDE)
     if (playerName->length() + scLen > 11) {
       dma_display->println(playerName->substring(0, 11 - scLen));

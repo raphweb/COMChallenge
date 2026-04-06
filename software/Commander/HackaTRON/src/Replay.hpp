@@ -8,7 +8,6 @@
 #include <ESP32TimerInterrupt.hpp>
 #include <FS.h>
 #include <LittleFS.h>
-#include <string>
 
 #define MAX_FRAMES_PER_READ 32
 typedef struct frame {
@@ -24,12 +23,12 @@ class Replay {
     friend void setup<Replay>(GlobalState* context);
     friend MenuNode* loop<Replay>();
 
-    private: static std::string gameToReplay;
+    private: static String* gameToReplay;
     private: static ThumbStick* st2;
     private: static MenuNode* returnMenu;
 
     private: static frame buffer[MAX_FRAMES_PER_READ*sizeof(frame)];
-    private: static uint16_t currentFrame;
+    private: static uint16_t currentFrameIndex;
     private: static uint16_t lastFrame;
     private: static CANMessage* currentGF;
     private: static File currentGameDir;

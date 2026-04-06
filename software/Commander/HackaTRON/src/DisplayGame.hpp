@@ -9,12 +9,13 @@
 struct PlayerInfo {
     const uint8_t playerID;
     uint8_t nameLength = 0;
-    String name = "";
+    String* const name;
     uint16_t score = 0;
-    explicit PlayerInfo(uint8_t _playerID) : playerID(_playerID), nameLength(11) {
+    explicit PlayerInfo(uint8_t _playerID) : playerID(_playerID), nameLength(11), name(new String(32, 0)) {
         char stdNameBuf[12];
         sprintf(stdNameBuf, "Player: %03d", playerID);
-        name = stdNameBuf;
+        name->clear();
+        name->concat(stdNameBuf, 11);
     };
 };
 

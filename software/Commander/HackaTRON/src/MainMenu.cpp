@@ -56,9 +56,9 @@ MenuNode* MainMenu::loop() {
             curMenu->lastKidIndex = menuSel;
             curMenu = curMenu->kids->at(menuSel);
             if (!curMenu->kids || curMenu->kids->empty()) {
-                log_i("Going to menu %s.", curMenu->label.c_str());
+                log_i("Going to menu %s.", curMenu->label->c_str());
             } else {
-                log_i("Going to submenu %s.", curMenu->label.c_str());
+                log_i("Going to submenu %s.", curMenu->label->c_str());
             }
             st2->clearEventQueues();
             return curMenu;
@@ -66,7 +66,7 @@ MenuNode* MainMenu::loop() {
             if (curMenu->parent) {
                 curMenu->lastKidIndex = menuSel;
                 curMenu = curMenu->parent;
-                log_i("Going back to menu %s.", curMenu->label.c_str());
+                log_i("Going back to menu %s.", curMenu->label->c_str());
                 st2->clearEventQueues();
                 return curMenu;
             }
@@ -92,7 +92,7 @@ void MainMenu::drawInfoPanelMainMenu(uint16_t xOffset, int16_t scroll) {
         uint8_t entry = (curMenu->kids->size() + menuSel + i - 2) % curMenu->kids->size();
         foreground_layer.setCursor(xOffset, 8*i - 8 + scroll);
         MenuNode* mn = curMenu->kids->at(entry);
-        foreground_layer.print(mn->label.c_str());
+        foreground_layer.print(mn->label->c_str());
         if (mn->kids && !mn->kids->empty()) {
             foreground_layer.fastFillRect(PANEL_RES_X*2 - 6, 8*i - 8 + scroll, 5, 8, c_black);
             foreground_layer.setCursor(PANEL_RES_X*2 - 6, 8*i - 8 + scroll);
