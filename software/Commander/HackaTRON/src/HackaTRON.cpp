@@ -15,6 +15,8 @@
 #define SETUP_SERIAL_CONSOLE
 #endif
 
+//#define CREATE_EXAMPLE_RECORDING
+
 #include <MatrixPanel.hpp>
 #include <MainMenu.hpp>
 #include <ProbeNodes.hpp>
@@ -52,8 +54,8 @@ void fillMenu() {
   menu->kids->emplace_back(replayTournamentMenu);
   menu->kids->emplace_back(new MenuNode("Observe and display", menu, nullptr, nullptr));
   MenuNode* advancedOptions = new MenuNode("Advanced options", menu);
-  advancedOptions->kids->emplace_back(new MenuNode("Test upper thumbstick", advancedOptions, nullptr, nullptr));
-  advancedOptions->kids->emplace_back(new MenuNode("Test lower thumbstick", advancedOptions, nullptr, nullptr));
+  advancedOptions->kids->emplace_back(new MenuNode("Test upper stick", advancedOptions, nullptr, nullptr));
+  advancedOptions->kids->emplace_back(new MenuNode("Test lower stick", advancedOptions, nullptr, nullptr));
   menu->kids->emplace_back(advancedOptions);
 }
 
@@ -64,6 +66,9 @@ void setup() {
     log_e("LittleFS Mount Failed");
     while (1) {}
   }
+#ifdef CREATE_EXAMPLE_RECORDING
+  createExampleRecording();
+#endif
   // init and fill menu entries
   menu = new MenuNode(&setup<MainMenu>, &loop<MainMenu>);
   fillMenu();
@@ -140,7 +145,7 @@ void loop() {
         // curMenu changed
         globStat->curMenu = loopRet;
         loopRet->setup(globStat);
-      } else if (loopRet->kids) {
+      } else if (loopRet->kids && !loopRet->kids->empty()) {
         globStat->curMenu = loopRet;
         menu->setup(globStat);
       } else {

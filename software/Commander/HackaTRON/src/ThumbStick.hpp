@@ -3,7 +3,6 @@
 #ifndef THUMBSTICK_HPP
 #define THUMBSTICK_HPP
 
-#include <ESP32AnalogRead.h>
 #include <cstdint>
 #include <MD_CirQueue.h>
 
@@ -28,10 +27,12 @@ public:
             flipY(_flipY),
             ignoreDiagonals(_ignoreDiagonals) {
         if (xAxisPin > -1) {
-            xAxis = new ESP32AnalogRead(xAxisPin);
+            adcAttachPin(xAxisPin);
+            xAxis = xAxisPin;
         }
         if (yAxisPin > -1) {
-            yAxis = new ESP32AnalogRead(yAxisPin);
+            adcAttachPin(yAxisPin);
+            yAxis = yAxisPin;
         }
         if (pushButtonPin > -1) {
             pinMode(pushButtonPin, INPUT_PULLUP);
@@ -43,12 +44,6 @@ public:
 
     ~ThumbStick() {
         clearEventQueues();
-        if (xAxis) {
-            delete xAxis;
-        }
-        if (yAxis) {
-            delete yAxis;
-        }
     }
 
     const boolean dirEvents() {
@@ -72,8 +67,8 @@ public:
     }
 
     void sampleState() {
-        uint16_t xSample = flipX ? 4095 - xAxis->readRaw() : xAxis->readRaw();
-        uint16_t ySample = flipY ? 4095 - yAxis->readRaw() : yAxis->readRaw();
+        uint16_t xSample = flipX ? 4095 - analogReadMilliVolts(xAxis) : analogReadMilliVolts(xAxis);
+        uint16_t ySample = flipY ? 4095 - analogReadMilliVolts(yAxis) : analogReadMilliVolts(yAxis);
         E_Direction sampledDir = calculateDirection(xSample, ySample);
         if (lastDirSample != sampledDir) {
             dirEventQueue.push((uint8_t *)&sampledDir);
@@ -102,8 +97,8 @@ public:
     }
 
     void calibrate() {
-        uint16_t xSample = flipX ? 4095 - xAxis->readRaw() : xAxis->readRaw();
-        uint16_t ySample = flipY ? 4095 - yAxis->readRaw() : yAxis->readRaw();
+        uint16_t xSample = flipX ? 4095 - analogReadMilliVolts(xAxis) : analogReadMilliVolts(xAxis);
+        uint16_t ySample = flipY ? 4095 - analogReadMilliVolts(yAxis) : analogReadMilliVolts(yAxis);
         uint16_t avg = (xSample + ySample)/2;
         lowerThreshhold = avg - (avg/3);
         upperThreshhold = avg + (avg/3);
@@ -111,8 +106,8 @@ public:
     }
 
 private:
-    ESP32AnalogRead* xAxis;
-    ESP32AnalogRead* yAxis;
+    uint8_t xAxis = 255;
+    uint8_t yAxis = 255;
     uint16_t upperThreshhold = 3000;
     uint16_t lowerThreshhold = 1000;
     uint8_t buttonPin = 255;

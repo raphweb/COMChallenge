@@ -92,7 +92,7 @@ class MainMenu {
     protected: static void setup(GlobalState* context);
     protected: static MenuNode* loop();
 
-    private: static void drawInfoPanelMainMenu(uint16_t xOffset, int16_t scroll);
+    private: static void drawInfoPanelMainMenu(int16_t xOffset, int16_t yOffset, int16_t width = PANEL_RES_X*2, int16_t height = PANEL_RES_Y);
 };
 
 #endif

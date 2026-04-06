@@ -10,6 +10,9 @@ uint8_t DisplayGame::gameEventInfo = 0;
 
 void DisplayGame::init(GlobalState* context) {
     dma_display = context->dma_display;
+    if (currentGame) {
+        delete currentGame;
+    }
     currentGame = new GameInfo();
     drawInfoPanelWaitingForGame(XOFFSET);
 }

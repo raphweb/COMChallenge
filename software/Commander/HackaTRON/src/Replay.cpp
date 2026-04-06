@@ -1,5 +1,6 @@
 #include <Replay.hpp>
 #include <DisplayGame.hpp>
+#include <cstddef>
 #include <cstdint>
 
 String* Replay::gameToReplay;
@@ -15,26 +16,33 @@ File Replay::currentGameFile;
 uint32_t Replay::iCtr = 0;
 uint32_t Replay::speedFactor = 32;
 
-ESP32Timer* Replay::iTimer;
+ESP32Timer* Replay::iTimer = nullptr;
 
 void Replay::setup(GlobalState* context) {
     returnMenu = context->curMenu->parent;
-    gameToReplay = new String(String("/") + *context->curMenu->label);
+    if (gameToReplay) {
+        gameToReplay->clear();
+    } else {
+        gameToReplay = new String;
+    }
+    gameToReplay->concat(String("/") + *context->curMenu->label);
+    log_i("Will load game '%s'.", gameToReplay->c_str());
     st2 = context->st2;
     currentFrameIndex = 0;
     lastFrame = 0;
     currentGameDir = {};
     currentGameFile = {};
-    iTimer = new ESP32Timer(2);
+    if (!iTimer) {
+        iTimer = new ESP32Timer(2);
+    }
     log_d("Created new replay object.");
     listDir(LittleFS, "/", 1);
     iTimer->setInterval(1500, onTimer);
     iTimer->disableTimer();
     DisplayGame::init(context);
-    if (currentGF) {
-        delete currentGF;
+    if (!currentGF) {
+        currentGF = new CANMessage();
     }
-    currentGF = new CANMessage();
 }
 
 MenuNode* Replay::loop() {
@@ -44,7 +52,13 @@ MenuNode* Replay::loop() {
             st2->clearEventQueues();
             iTimer->disableTimer();
             iTimer->detachInterrupt();
-            delete currentGF;
+            currentGF->id = 0;
+            if (currentGameDir) {
+                currentGameDir.close();
+            }
+            if (currentGameFile) {
+                currentGameFile.close();
+            }
             DisplayGame::clearDisplay();
             log_i("Going back to main menu.");
             return returnMenu;
@@ -58,12 +72,11 @@ MenuNode* Replay::loop() {
             speedFactor *= 2;
         }
     }
-    iTimer->disableTimer();
     boolean firstTime = false;
     if ((!currentGameFile || currentGameFile.position() == 0) && lastFrame == 0) {
         // start new file read
         if (!currentGameFile) {
-            log_d("Loading game '%s'.", gameToReplay->c_str());
+            log_i("Loading game '%s'.", gameToReplay->c_str());
             currentGameFile = LittleFS.open(gameToReplay->c_str());
             if (currentGameFile.isDirectory()) {
                 currentGameDir = currentGameFile;
@@ -77,6 +90,7 @@ MenuNode* Replay::loop() {
         currentFrameIndex = 0;
     }
     if (currentGameFile && currentFrameIndex % (MAX_FRAMES_PER_READ/2) == 0 && currentGameFile.position() / sizeof(frame) == currentFrameIndex) {
+        iTimer->disableTimer();
         size_t remaining = min(lastFrame*sizeof(frame) - currentGameFile.position(), (MAX_FRAMES_PER_READ/2)*sizeof(frame));
         log_d("Reading next %d bytes.", remaining);
         currentGameFile.read((uint8_t *)&buffer[currentFrameIndex%MAX_FRAMES_PER_READ], remaining);
@@ -98,8 +112,8 @@ MenuNode* Replay::loop() {
             }
             log_d("Closed file.");
         }
+        iTimer->enableTimer();
     }
-    iTimer->enableTimer();
     log_d("Enabling the timer.");
     DisplayGame::updatedDisplay();
     return nullptr;
@@ -142,7 +156,7 @@ void Replay::listDir(fs::FS &fs, const char * dirname, uint8_t levels) {
 }
 
 bool IRAM_ATTR Replay::onTimer(void *timerNo) {
-    if (!currentGF) {
+    if (!currentGF || currentGF->id == 0) {
         return true;
     }
     // called every 10ms
