@@ -55,6 +55,7 @@ struct MenuNode {
 
 struct GlobalState {
     std::map<uint8_t, uint8_t*>* const baseBoards;
+    std::map<uint32_t, uint8_t>* const hwId2Node;
     MatrixPanel_I2S_DMA* const dma_display;
     TwoWire* const i2c;
     ThumbStick* const st1;

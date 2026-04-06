@@ -43,17 +43,20 @@ void fillMenu() {
     File file = recDir.openNextFile();
     while(file) {
       if(file.isDirectory()) {
-        log_i("  Tournament recording: %s", file.name());
+        log_i("Found tournament recording: %s", file.name());
       } else {
-        log_i("  Single game recording: %s", file.name());
+        log_i("Found single game recording: %s", file.name());
       }
       replayTournamentMenu->kids->emplace_back(new MenuNode(file.name(), replayTournamentMenu, &setup<Replay>, &loop<Replay>));
       file = recDir.openNextFile();
     }
   }
+  log_i("Used/remaining space for LittleFS: %d Bytes/%d Bytes.", LittleFS.usedBytes(), LittleFS.totalBytes() - LittleFS.usedBytes());
   menu->kids->emplace_back(replayTournamentMenu);
   menu->kids->emplace_back(new MenuNode("Observe and display", menu, nullptr, nullptr));
   MenuNode* advancedOptions = new MenuNode("Advanced options", menu);
+  advancedOptions->kids->emplace_back(new MenuNode("Disable all nodes", advancedOptions, [](GlobalState* context) { ProbeNodes::switchAllNodes(*context->i2c, false); }, nullptr));
+  advancedOptions->kids->emplace_back(new MenuNode("Enable all nodes", advancedOptions, [](GlobalState* context) { ProbeNodes::switchAllNodes(*context->i2c, true); }, nullptr));
   advancedOptions->kids->emplace_back(new MenuNode("Test upper stick", advancedOptions, nullptr, nullptr));
   advancedOptions->kids->emplace_back(new MenuNode("Test lower stick", advancedOptions, nullptr, nullptr));
   menu->kids->emplace_back(advancedOptions);
@@ -111,7 +114,6 @@ void setup() {
   settings.mRxPin = GPIO_NUM_7;
   const ACAN_ESP32_Filter filter = ACAN_ESP32_Filter::acceptStandardFrames();
   uint32_t errorCode = ACAN_ESP32::can.begin(settings, filter);
-  setlocale(LC_NUMERIC, "");
   if (errorCode == 0) {
     log_i("Bit rate prescaler: %d;", settings.mBitRatePrescaler);
     log_i("Time segment 1:     %d;", settings.mTimeSegment1);
@@ -119,8 +121,12 @@ void setup() {
     log_i("RJW:                %d;", settings.mRJW);
     log_i("Triple sampling:    %s;", settings.mTripleSampling ? "yes" : "no");
     uint32_t actBR = settings.actualBitRate();
-    if (actBR > 1000) {
-      log_i("Actual bit rate:    %d kBit/s;", actBR/1000);
+    if (actBR >= 1000) {
+      if (actBR % 1000) {
+        log_i("Actual bit rate:    %d.%03d kBit/s;", actBR/1000, actBR%1000);
+      } else {
+        log_i("Actual bit rate:    %d kBit/s;", actBR/1000);
+      }
     } else {
       log_i("Actual bit rate:    %d Bit/s;", actBR);
     }
@@ -131,7 +137,8 @@ void setup() {
     log_e("Configuration error %#08x!", errorCode);
   }
   // create global state
-  globStat = new GlobalState{new std::map<uint8_t, uint8_t*>, dma_display, &i2c, st1, st2, &ACAN_ESP32::can, menu};
+  globStat = new GlobalState{new std::map<uint8_t, uint8_t*>, new std::map<uint32_t, uint8_t>,
+      dma_display, &i2c, st1, st2, &ACAN_ESP32::can, menu};
   if (globStat->curMenu && globStat->curMenu->hasSetupFunction()) {
     globStat->curMenu->setup(globStat);
   }

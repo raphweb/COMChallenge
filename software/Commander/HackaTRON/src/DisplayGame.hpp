@@ -8,10 +8,12 @@
 
 struct PlayerInfo {
     const uint8_t playerID;
+    const uint32_t hwId;
     uint8_t nameLength = 0;
     String* const name;
     uint16_t score = 0;
-    explicit PlayerInfo(uint8_t _playerID) : playerID(_playerID), nameLength(11), name(new String(32, 0)) {
+    explicit PlayerInfo(uint8_t _playerID, uint32_t _hwId) : playerID(_playerID),
+            hwId(_hwId), nameLength(11), name(new String(32, 0)) {
         char stdNameBuf[12];
         sprintf(stdNameBuf, "Player: %03d", playerID);
         name->clear();

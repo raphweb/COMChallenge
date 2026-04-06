@@ -86,6 +86,9 @@ MenuNode* MainMenu::loop() {
             }
         }
     }
+    if ((!curMenu->kids || curMenu->kids->empty()) && curMenu->parent) {
+        return curMenu->parent;
+    }
     return nullptr;
 }
 
@@ -120,8 +123,8 @@ void MainMenu::drawInfoPanelMainMenu(int16_t xOffset, int16_t yOffset, int16_t w
         }
     }
     if (countToRoot > 0) {
-        foreground_layer.fastFillRect(0, 0, 6*countToRoot, 8, c_black);
-        foreground_layer.setCursor(0, 0);
+        foreground_layer.fastFillRect(0, 8, 6*countToRoot, 8, c_black);
+        foreground_layer.setCursor(0, 8);
         for(uint8_t i = 0; i < countToRoot; i++) {
             foreground_layer.print('<');
         }

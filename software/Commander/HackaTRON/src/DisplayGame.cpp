@@ -27,7 +27,8 @@ void DisplayGame::processFrame(CANMessage& frame) {
             break;
         case 0x110: // PLAYER - get the playerID
             if (frame.len == 5 && !players[frame.data[4]]) {
-                players[frame.data[4]] = new PlayerInfo(frame.data[4]);
+                uint32_t hwId = frame.data32[0];
+                players[frame.data[4]] = new PlayerInfo(frame.data[4], hwId);
             }
             break;
         case 0x500: // RENAME - update a players name
