@@ -1690,6 +1690,155 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:MBR1020VL"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MBR1020VL"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-123F"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MBR1020VL-D.PDF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "20V, 1A, 340 mV, Schottky Diode Rectifier, SOD-123F"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "forward voltage diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?123F*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MBR1020VL_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MBR1020VL_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "PCF8574RGTR:PCF8574RGTR"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3156,12 +3305,6 @@
 		(uuid "0d110490-ab7c-4947-a0cd-8f9d4fc622ed")
 	)
 	(junction
-		(at 133.35 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0ef29eae-53da-4e9a-b1dd-77fd28c80f0f")
-	)
-	(junction
 		(at 107.95 15.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3204,12 +3347,6 @@
 		(uuid "364b7449-17e7-452d-9928-4653d78feccb")
 	)
 	(junction
-		(at 133.35 22.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "43937607-2a17-4bf9-a1b5-81fab58ba1eb")
-	)
-	(junction
 		(at 135.89 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3220,12 +3357,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4c5d47cb-2378-44f0-b225-648fa5d895f8")
-	)
-	(junction
-		(at 62.23 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4fe83bf2-9a06-462c-8ebd-953fd6f56bce")
 	)
 	(junction
 		(at 135.89 43.18)
@@ -3252,34 +3383,10 @@
 		(uuid "66535dd6-b00c-425f-ae2f-cbc2defbd072")
 	)
 	(junction
-		(at 62.23 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6760d29f-b568-4a50-a3a3-d92860235922")
-	)
-	(junction
-		(at 62.23 22.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6fea20c9-99bc-4f53-aced-1ab1160d62b0")
-	)
-	(junction
-		(at 133.35 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "72dc377c-95d3-4b11-b40f-6a3666404acc")
-	)
-	(junction
 		(at 180.34 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "92f2bd52-4bbb-4325-97dd-3f6c24c2bbf4")
-	)
-	(junction
-		(at 133.35 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "94610ae9-0631-419d-b15b-b720fc9b101c")
 	)
 	(junction
 		(at 36.83 15.24)
@@ -3372,12 +3479,6 @@
 		(uuid "cdab4fce-e716-4de0-acab-cc4fc5936d3b")
 	)
 	(junction
-		(at 62.23 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "de36b3e8-2319-47cd-afaf-32926d6a9143")
-	)
-	(junction
 		(at 36.83 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3456,6 +3557,10 @@
 		(uuid "2188a98b-bedc-4ac0-81f2-d9251838d1de")
 	)
 	(no_connect
+		(at 125.73 16.51)
+		(uuid "2724e5fd-ffda-42d9-a88e-2f25cd5a2b87")
+	)
+	(no_connect
 		(at 92.71 74.93)
 		(uuid "2a7b6934-0c0e-44e3-82d6-abcd7757703b")
 	)
@@ -3474,6 +3579,10 @@
 	(no_connect
 		(at 21.59 151.13)
 		(uuid "31530472-282d-4e5e-b474-1589de249949")
+	)
+	(no_connect
+		(at 54.61 134.62)
+		(uuid "3506f7c7-9276-4fe6-8a39-10701d36d423")
 	)
 	(no_connect
 		(at 110.49 43.18)
@@ -3592,6 +3701,10 @@
 		(uuid "7e13718d-5391-4352-9f6a-517d5e57c317")
 	)
 	(no_connect
+		(at 125.73 55.88)
+		(uuid "80e56ded-6898-4bc5-8c60-684e3728749f")
+	)
+	(no_connect
 		(at 92.71 114.3)
 		(uuid "89d9f9bc-54b8-4cec-a5fe-b494f91b5720")
 	)
@@ -3684,6 +3797,10 @@
 		(uuid "c5f40970-6321-4680-a18a-102a299add6b")
 	)
 	(no_connect
+		(at 54.61 95.25)
+		(uuid "c702fdf6-09ec-4445-96cd-dea0d43926b9")
+	)
+	(no_connect
 		(at 21.59 158.75)
 		(uuid "c789a332-26ce-4111-9287-5637b4aa20f3")
 	)
@@ -3704,12 +3821,28 @@
 		(uuid "d6878e66-bf27-4467-9c22-7a202eacc606")
 	)
 	(no_connect
+		(at 54.61 16.51)
+		(uuid "d873e314-b01e-4b29-b239-61609e9893fc")
+	)
+	(no_connect
+		(at 125.73 95.25)
+		(uuid "daaeea73-624a-46a4-8be0-d44ec517318a")
+	)
+	(no_connect
 		(at 92.71 153.67)
 		(uuid "de4cb1e7-543f-4eb1-b465-514382b7bb8d")
 	)
 	(no_connect
+		(at 54.61 55.88)
+		(uuid "de77fa77-38f1-446f-bdf4-c432486fa5bf")
+	)
+	(no_connect
 		(at 39.37 74.93)
 		(uuid "e46322e5-2979-4a82-9532-a216aebea36c")
+	)
+	(no_connect
+		(at 125.73 134.62)
+		(uuid "e87a4d8b-1b7f-41b8-8e83-a083283bd7cf")
 	)
 	(no_connect
 		(at 130.81 55.88)
@@ -3971,16 +4104,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 93.98) (xy 133.35 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b1b20dc-e0cf-4d06-a143-ee409763049c")
-	)
-	(wire
-		(pts
 			(xy 215.9 74.93) (xy 217.17 74.93)
 		)
 		(stroke
@@ -4061,6 +4184,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 99.06) (xy 63.5 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10b321cd-4a70-43c7-91f6-2c8e09ee9c55")
+	)
+	(wire
+		(pts
 			(xy 34.29 54.61) (xy 36.83 54.61)
 		)
 		(stroke
@@ -4098,16 +4231,6 @@
 			(type default)
 		)
 		(uuid "126b7a51-10cc-4f59-85d6-42ff00796389")
-	)
-	(wire
-		(pts
-			(xy 54.61 55.88) (xy 54.61 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13726f80-004f-4bed-924f-716c4f2e3c7e")
 	)
 	(wire
 		(pts
@@ -4168,16 +4291,6 @@
 			(type default)
 		)
 		(uuid "16cdb9ac-131e-45cf-ab4c-8b217f65440c")
-	)
-	(wire
-		(pts
-			(xy 125.73 134.62) (xy 125.73 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16d7e18e-a172-4698-b73b-a54451372d5b")
 	)
 	(wire
 		(pts
@@ -4411,16 +4524,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 133.35) (xy 133.35 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25c67f56-e3bb-4aef-9563-c90ded55615d")
-	)
-	(wire
-		(pts
 			(xy 34.29 133.35) (xy 34.29 134.62)
 		)
 		(stroke
@@ -4491,6 +4594,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 59.69) (xy 63.5 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "285f6134-f662-445c-ac95-8dc26dab1a14")
+	)
+	(wire
+		(pts
 			(xy 168.91 101.6) (xy 170.18 101.6)
 		)
 		(stroke
@@ -4521,7 +4634,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 140.97) (xy 63.5 140.97)
+			(xy 63.5 139.7) (xy 63.5 138.43)
 		)
 		(stroke
 			(width 0)
@@ -4701,16 +4814,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 133.35) (xy 133.35 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32cb6d3c-1853-4878-acd2-2647c72d1095")
-	)
-	(wire
-		(pts
 			(xy 105.41 80.01) (xy 104.14 80.01)
 		)
 		(stroke
@@ -4781,16 +4884,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 62.23) (xy 62.23 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37ae49cb-388f-4ef5-bbfe-c1f4b2a4eb9e")
-	)
-	(wire
-		(pts
 			(xy 102.87 53.34) (xy 102.87 55.88)
 		)
 		(stroke
@@ -4808,16 +4901,6 @@
 			(type default)
 		)
 		(uuid "394d4999-c723-4f3c-bf24-09443ef5b8cf")
-	)
-	(wire
-		(pts
-			(xy 54.61 16.51) (xy 54.61 15.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "395d3694-2088-46e0-81ff-8dad1a071789")
 	)
 	(wire
 		(pts
@@ -4921,6 +5004,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 68.58) (xy 63.5 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ea06fdc-2060-4454-97d1-cfc0f21a9c36")
+	)
+	(wire
+		(pts
 			(xy 135.89 161.29) (xy 139.7 161.29)
 		)
 		(stroke
@@ -4961,7 +5054,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 69.85) (xy 62.23 69.85)
+			(xy 59.69 69.85) (xy 63.5 69.85)
 		)
 		(stroke
 			(width 0)
@@ -5181,6 +5274,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 147.32) (xy 63.5 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c198ca3-035b-445f-829c-53a9427a2831")
+	)
+	(wire
+		(pts
 			(xy 31.75 92.71) (xy 22.86 92.71)
 		)
 		(stroke
@@ -5188,16 +5291,6 @@
 			(type default)
 		)
 		(uuid "4c209c32-ba4f-4f99-bd9d-bf14a8bc416b")
-	)
-	(wire
-		(pts
-			(xy 125.73 54.61) (xy 133.35 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c43cda5-b102-4edd-89d7-73571de11f43")
 	)
 	(wire
 		(pts
@@ -5331,13 +5424,13 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 140.97) (xy 62.23 148.59)
+			(xy 63.5 29.21) (xy 63.5 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54b3d06b-cd92-48db-a3b3-3966b005db21")
+		(uuid "5508805d-a683-4179-ad5b-2294ddc7e0fd")
 	)
 	(wire
 		(pts
@@ -5358,16 +5451,6 @@
 			(type default)
 		)
 		(uuid "55a2083c-2d78-4182-b433-188e7064d2f6")
-	)
-	(wire
-		(pts
-			(xy 62.23 22.86) (xy 63.5 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55d816c8-ecae-4ec9-97e3-ff3de353628b")
 	)
 	(wire
 		(pts
@@ -5398,16 +5481,6 @@
 			(type default)
 		)
 		(uuid "585dc3ac-44ef-4683-8a72-884fd922466d")
-	)
-	(wire
-		(pts
-			(xy 125.73 55.88) (xy 125.73 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "587b5cfc-b543-4d42-81f9-c028ef5430ef")
 	)
 	(wire
 		(pts
@@ -5498,16 +5571,6 @@
 			(type default)
 		)
 		(uuid "5e7e50b7-6292-47c8-865c-60f23f84ad82")
-	)
-	(wire
-		(pts
-			(xy 54.61 15.24) (xy 62.23 15.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ee526c9-de67-4789-89ca-a4539284bd8a")
 	)
 	(wire
 		(pts
@@ -5711,6 +5774,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 68.58) (xy 134.62 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c8394c4-be4e-49d2-9352-551978e7b739")
+	)
+	(wire
+		(pts
 			(xy 21.59 148.59) (xy 29.21 148.59)
 		)
 		(stroke
@@ -5731,7 +5804,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 30.48) (xy 62.23 30.48)
+			(xy 59.69 30.48) (xy 63.5 30.48)
 		)
 		(stroke
 			(width 0)
@@ -5801,16 +5874,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 16.51) (xy 125.73 15.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "725aa9ac-4b0a-4584-9487-5b9134462203")
-	)
-	(wire
-		(pts
 			(xy 95.25 146.05) (xy 95.25 133.35)
 		)
 		(stroke
@@ -5871,16 +5934,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 22.86) (xy 62.23 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b14127f-b178-4afe-9c19-8aa423c18b5b")
-	)
-	(wire
-		(pts
 			(xy 107.95 133.35) (xy 105.41 133.35)
 		)
 		(stroke
@@ -5898,6 +5951,16 @@
 			(type default)
 		)
 		(uuid "7ba07c4c-a06a-436c-9c19-9f78c5528ba6")
+	)
+	(wire
+		(pts
+			(xy 134.62 107.95) (xy 134.62 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7be1dae3-1aed-4074-92ff-74e390ad52a9")
 	)
 	(wire
 		(pts
@@ -5928,16 +5991,6 @@
 			(type default)
 		)
 		(uuid "7d2b2ccf-bbdc-4108-91e0-28142aefa50a")
-	)
-	(wire
-		(pts
-			(xy 125.73 95.25) (xy 125.73 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7da601ea-5a9a-48ab-88cd-62b06d2c27bf")
 	)
 	(wire
 		(pts
@@ -6001,23 +6054,13 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 109.22) (xy 130.81 109.22)
+			(xy 130.81 109.22) (xy 134.62 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "813218e0-d02d-4b27-aa60-81c9977d680c")
-	)
-	(wire
-		(pts
-			(xy 133.35 54.61) (xy 133.35 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "816b8c34-0d3f-4767-b7a5-7306480ce259")
 	)
 	(wire
 		(pts
@@ -6061,7 +6104,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 69.85) (xy 130.81 69.85)
+			(xy 130.81 69.85) (xy 134.62 69.85)
 		)
 		(stroke
 			(width 0)
@@ -6078,16 +6121,6 @@
 			(type default)
 		)
 		(uuid "8446c541-c138-45bb-8fa4-091f940bd5fe")
-	)
-	(wire
-		(pts
-			(xy 54.61 54.61) (xy 62.23 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "849ca340-ef7c-4d86-a90a-1f947916be2f")
 	)
 	(wire
 		(pts
@@ -6141,7 +6174,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 22.86) (xy 133.35 22.86)
+			(xy 134.62 20.32) (xy 134.62 21.59)
 		)
 		(stroke
 			(width 0)
@@ -6171,7 +6204,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 109.22) (xy 62.23 109.22)
+			(xy 59.69 109.22) (xy 63.5 109.22)
 		)
 		(stroke
 			(width 0)
@@ -6218,6 +6251,26 @@
 			(type default)
 		)
 		(uuid "8d91769f-1dc1-40e0-8065-e4c589f613eb")
+	)
+	(wire
+		(pts
+			(xy 134.62 29.21) (xy 134.62 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8db8129c-3ba2-4312-a79f-c1ec04202a59")
+	)
+	(wire
+		(pts
+			(xy 63.5 107.95) (xy 63.5 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e085127-321b-41ec-8cd7-dd4bb2c24314")
 	)
 	(wire
 		(pts
@@ -6288,16 +6341,6 @@
 			(type default)
 		)
 		(uuid "916ba2e2-c09b-47ea-ab88-dba9a3b86115")
-	)
-	(wire
-		(pts
-			(xy 54.61 134.62) (xy 54.61 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91b1c61b-165c-409c-8d4e-149c5b0c8bb1")
 	)
 	(wire
 		(pts
@@ -6421,16 +6464,6 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 93.98) (xy 62.23 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9565dbfa-b6e9-4116-b8d8-76da1b0b9a29")
-	)
-	(wire
-		(pts
 			(xy 180.34 80.01) (xy 180.34 81.28)
 		)
 		(stroke
@@ -6458,16 +6491,6 @@
 			(type default)
 		)
 		(uuid "95c472f7-338f-4b3c-b574-a3599ac8505e")
-	)
-	(wire
-		(pts
-			(xy 62.23 62.23) (xy 63.5 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95d6e9ac-5ad6-4d8b-81f6-bf3047ce35d1")
 	)
 	(wire
 		(pts
@@ -6561,16 +6584,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 22.86) (xy 133.35 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ef3d9bf-8e94-49f9-b0de-32d24eddf196")
-	)
-	(wire
-		(pts
 			(xy 107.95 64.77) (xy 107.95 54.61)
 		)
 		(stroke
@@ -6578,16 +6591,6 @@
 			(type default)
 		)
 		(uuid "a09c018b-5086-415b-8ef9-f9973291ed18")
-	)
-	(wire
-		(pts
-			(xy 62.23 133.35) (xy 62.23 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a25f85ed-60ef-4862-9293-6345c6553e28")
 	)
 	(wire
 		(pts
@@ -6651,26 +6654,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 15.24) (xy 133.35 15.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5d4985f-20d8-42a8-a023-99cdeb4d055a")
-	)
-	(wire
-		(pts
-			(xy 133.35 62.23) (xy 133.35 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5ddb049-96ab-4392-8705-b6a8b285248f")
-	)
-	(wire
-		(pts
 			(xy 167.64 88.9) (xy 168.91 88.9)
 		)
 		(stroke
@@ -6701,7 +6684,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 62.23) (xy 133.35 62.23)
+			(xy 134.62 59.69) (xy 134.62 60.96)
 		)
 		(stroke
 			(width 0)
@@ -6758,16 +6741,6 @@
 			(type default)
 		)
 		(uuid "a9f56f45-7518-4ed0-876a-322bec7ecb8b")
-	)
-	(wire
-		(pts
-			(xy 62.23 93.98) (xy 62.23 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab6f880a-3b7e-486a-a115-5583314c2ca6")
 	)
 	(wire
 		(pts
@@ -6871,16 +6844,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 54.61) (xy 62.23 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b268a3cd-6d31-425f-91e3-a32b9742ab93")
-	)
-	(wire
-		(pts
 			(xy 135.89 160.02) (xy 135.89 161.29)
 		)
 		(stroke
@@ -6961,16 +6924,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 101.6) (xy 63.5 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5e0f3cf-c587-4828-ae8d-050fbb28c5a4")
-	)
-	(wire
-		(pts
 			(xy 233.68 80.01) (xy 233.68 77.47)
 		)
 		(stroke
@@ -6981,7 +6934,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 140.97) (xy 133.35 140.97)
+			(xy 134.62 138.43) (xy 134.62 139.7)
 		)
 		(stroke
 			(width 0)
@@ -7061,7 +7014,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 148.59) (xy 62.23 148.59)
+			(xy 59.69 148.59) (xy 63.5 148.59)
 		)
 		(stroke
 			(width 0)
@@ -7081,16 +7034,6 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 93.98) (xy 133.35 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bbda4b1c-3492-4a19-aa86-9be0d57a7c91")
-	)
-	(wire
-		(pts
 			(xy 29.21 148.59) (xy 29.21 147.32)
 		)
 		(stroke
@@ -7098,16 +7041,6 @@
 			(type default)
 		)
 		(uuid "bbe82001-763a-4063-b526-55ec7394844f")
-	)
-	(wire
-		(pts
-			(xy 62.23 101.6) (xy 62.23 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc4b4e2e-1c0f-4598-9acc-c8eea37e21d6")
 	)
 	(wire
 		(pts
@@ -7168,16 +7101,6 @@
 			(type default)
 		)
 		(uuid "be4f9ad6-8d48-4c35-984f-49f132300f2c")
-	)
-	(wire
-		(pts
-			(xy 133.35 140.97) (xy 133.35 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bee46834-8079-4bf6-a9bf-0b92d52bba1b")
 	)
 	(wire
 		(pts
@@ -7331,16 +7254,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 101.6) (xy 133.35 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb183d68-4dd6-4e81-895b-ed7df208cf24")
-	)
-	(wire
-		(pts
 			(xy 46.99 109.22) (xy 54.61 109.22)
 		)
 		(stroke
@@ -7358,6 +7271,16 @@
 			(type default)
 		)
 		(uuid "cd16472b-2500-4b7b-ac00-1d567297b0b2")
+	)
+	(wire
+		(pts
+			(xy 63.5 20.32) (xy 63.5 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd3c053d-85ee-449b-8b65-2b9ab3e6c0ca")
 	)
 	(wire
 		(pts
@@ -7681,16 +7604,6 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 15.24) (xy 133.35 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2b22c30-377f-4810-b577-333b861d0e24")
-	)
-	(wire
-		(pts
 			(xy 107.95 54.61) (xy 105.41 54.61)
 		)
 		(stroke
@@ -7861,7 +7774,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 101.6) (xy 133.35 101.6)
+			(xy 134.62 99.06) (xy 134.62 100.33)
 		)
 		(stroke
 			(width 0)
@@ -7878,16 +7791,6 @@
 			(type default)
 		)
 		(uuid "eda7fa9e-4e41-4006-b50c-00b77b7753ca")
-	)
-	(wire
-		(pts
-			(xy 54.61 133.35) (xy 62.23 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eeb959a9-1d51-4db2-940d-07b9a8df5be8")
 	)
 	(wire
 		(pts
@@ -7928,16 +7831,6 @@
 			(type default)
 		)
 		(uuid "f1beb683-b61b-4cde-b727-50d039e99c58")
-	)
-	(wire
-		(pts
-			(xy 62.23 15.24) (xy 62.23 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f25949e1-c16c-4343-9d15-1b4282452f5b")
 	)
 	(wire
 		(pts
@@ -8081,7 +7974,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 30.48) (xy 130.81 30.48)
+			(xy 130.81 30.48) (xy 134.62 30.48)
 		)
 		(stroke
 			(width 0)
@@ -8131,6 +8024,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 147.32) (xy 134.62 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb40d5cb-16e4-4831-861f-92af12365a84")
+	)
+	(wire
+		(pts
 			(xy 46.99 30.48) (xy 46.99 38.1)
 		)
 		(stroke
@@ -8171,7 +8074,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 148.59) (xy 130.81 148.59)
+			(xy 130.81 148.59) (xy 134.62 148.59)
 		)
 		(stroke
 			(width 0)
@@ -8188,16 +8091,6 @@
 			(type default)
 		)
 		(uuid "fe601d34-881b-4145-8877-3c984d995ed1")
-	)
-	(wire
-		(pts
-			(xy 54.61 95.25) (xy 54.61 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "febebb60-8d69-4282-a014-242095c119ac")
 	)
 	(wire
 		(pts
@@ -8365,7 +8258,7 @@
 	)
 	(global_label "+5V"
 		(shape input)
-		(at 134.62 22.86 0)
+		(at 134.62 20.32 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8375,7 +8268,7 @@
 		)
 		(uuid "1c07779b-b78d-4aaa-9ec3-f527e6f43ee0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.4757 22.86 0)
+			(at 134.62 13.4643 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8387,7 +8280,7 @@
 	)
 	(global_label "+5V"
 		(shape input)
-		(at 63.5 22.86 0)
+		(at 63.5 20.32 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8397,7 +8290,7 @@
 		)
 		(uuid "1d3146ee-a465-41f8-a0ad-a8579af57d0a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 70.3557 22.86 0)
+			(at 63.5 13.4643 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8541,7 +8434,7 @@
 	)
 	(global_label "+5V"
 		(shape input)
-		(at 63.5 101.6 0)
+		(at 63.5 99.06 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8551,7 +8444,7 @@
 		)
 		(uuid "2de895b0-ec7f-42bc-bfcf-427411adc609")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 70.3557 101.6 0)
+			(at 63.5 92.2043 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8761,7 +8654,7 @@
 	)
 	(global_label "+5V"
 		(shape input)
-		(at 63.5 140.97 0)
+		(at 63.5 138.43 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8771,7 +8664,7 @@
 		)
 		(uuid "46aad3f5-96c1-4a86-a9e8-38f6c55a2685")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 70.3557 140.97 0)
+			(at 63.5 131.5743 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9047,7 +8940,7 @@
 	)
 	(global_label "+5V"
 		(shape input)
-		(at 63.5 62.23 0)
+		(at 63.5 59.69 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9057,7 +8950,7 @@
 		)
 		(uuid "800fe3c0-385b-43fa-b871-b621c054e673")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 70.3557 62.23 0)
+			(at 63.5 52.8343 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9157,7 +9050,7 @@
 	)
 	(global_label "+5V"
 		(shape input)
-		(at 134.62 101.6 0)
+		(at 134.62 99.06 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9167,7 +9060,7 @@
 		)
 		(uuid "8f5fd6e7-1ed2-49c2-86e6-b13b6cbdc2da")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.4757 101.6 0)
+			(at 134.62 92.2043 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9289,7 +9182,7 @@
 	)
 	(global_label "+5V"
 		(shape input)
-		(at 134.62 62.23 0)
+		(at 134.62 59.69 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9299,7 +9192,7 @@
 		)
 		(uuid "ab9efe37-bd5f-4e60-9ab7-645f7ab1cc2a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.4757 62.23 0)
+			(at 134.62 52.8343 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9443,7 +9336,7 @@
 	)
 	(global_label "+5V"
 		(shape input)
-		(at 134.62 140.97 0)
+		(at 134.62 138.43 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9453,7 +9346,7 @@
 		)
 		(uuid "bb301a96-f6fb-446e-bc7c-6bd8d48ddebe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.4757 140.97 0)
+			(at 134.62 131.5743 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10130,6 +10023,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:MBR1020VL")
+		(at 134.62 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0ad9bb0d-e7d0-4679-9f38-8151086e02a1")
+		(property "Reference" "D6"
+			(at 136.398 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MBR1020VL"
+			(at 137.16 66.3574 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 139.065 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MBR1020VL-D.PDF"
+			(at 134.62 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V, 1A, 340 mV, Schottky Diode Rectifier, SOD-123F"
+			(at 134.62 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "240281f3-8d88-4824-9601-336cd9a102d4")
+		)
+		(pin "1"
+			(uuid "d383e591-1c47-42e3-8049-ff4581159098")
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/10c9b28d-d236-4c9d-afc8-498abc1c716d"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 130.81 43.18 90)
 		(unit 1)
@@ -10442,6 +10405,76 @@
 			(project "BaseBoard"
 				(path "/10c9b28d-d236-4c9d-afc8-498abc1c716d"
 					(reference "J2-ESP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:MBR1020VL")
+		(at 63.5 25.4 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "14f669db-f2c8-48b4-a595-f5e46e92aeed")
+		(property "Reference" "D1"
+			(at 65.278 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MBR1020VL"
+			(at 66.04 26.9874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 67.945 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MBR1020VL-D.PDF"
+			(at 63.5 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V, 1A, 340 mV, Schottky Diode Rectifier, SOD-123F"
+			(at 63.5 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "69ea5609-a0b6-4249-b28b-50db4a4a2210")
+		)
+		(pin "1"
+			(uuid "3d022f06-1a68-4012-98ff-02f598552c08")
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/10c9b28d-d236-4c9d-afc8-498abc1c716d"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -12036,6 +12069,146 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:MBR1020VL")
+		(at 134.62 104.14 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53c5140b-cf97-46d9-a9c3-09047658f85e")
+		(property "Reference" "D7"
+			(at 136.398 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MBR1020VL"
+			(at 137.16 105.7274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 139.065 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MBR1020VL-D.PDF"
+			(at 134.62 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V, 1A, 340 mV, Schottky Diode Rectifier, SOD-123F"
+			(at 134.62 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fffd165c-e69e-4340-9eff-92c16930c53b")
+		)
+		(pin "1"
+			(uuid "02133fb0-3ad9-4397-9865-18240fc5efd0")
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/10c9b28d-d236-4c9d-afc8-498abc1c716d"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:MBR1020VL")
+		(at 134.62 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "562bed27-c820-4ee6-85c5-03fa62289b52")
+		(property "Reference" "D8"
+			(at 136.398 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MBR1020VL"
+			(at 137.16 145.0974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 139.065 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MBR1020VL-D.PDF"
+			(at 134.62 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V, 1A, 340 mV, Schottky Diode Rectifier, SOD-123F"
+			(at 134.62 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6ab50925-23cd-4135-b1f1-0a4b693557a7")
+		)
+		(pin "1"
+			(uuid "97d898b2-7e7c-43d2-be1a-d004c2aed3fa")
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/10c9b28d-d236-4c9d-afc8-498abc1c716d"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
 		(at 34.29 113.03 90)
 		(unit 1)
@@ -13621,6 +13794,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:MBR1020VL")
+		(at 134.62 25.4 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "88bd098a-d87b-4db2-b972-1b0d8ae7c7d6")
+		(property "Reference" "D5"
+			(at 136.398 25.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MBR1020VL"
+			(at 137.16 26.9874 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 139.065 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MBR1020VL-D.PDF"
+			(at 134.62 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V, 1A, 340 mV, Schottky Diode Rectifier, SOD-123F"
+			(at 134.62 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f2d0f723-a424-406a-9bff-7b1cb2ea320d")
+		)
+		(pin "1"
+			(uuid "e1fa252e-27bf-4885-a35e-0a88928c2858")
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/10c9b28d-d236-4c9d-afc8-498abc1c716d"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDREF")
 		(at 90.17 16.51 270)
 		(unit 1)
@@ -13998,6 +14241,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:MBR1020VL")
+		(at 63.5 104.14 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "90489802-0181-4ab3-a869-5d402ed97354")
+		(property "Reference" "D3"
+			(at 65.278 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MBR1020VL"
+			(at 66.04 105.7274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 67.945 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MBR1020VL-D.PDF"
+			(at 63.5 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V, 1A, 340 mV, Schottky Diode Rectifier, SOD-123F"
+			(at 63.5 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "937fbee7-0de3-4eb1-b324-062d1708bc40")
+		)
+		(pin "1"
+			(uuid "e0a6ff74-526a-4390-81ea-1d0b9f13eb83")
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/10c9b28d-d236-4c9d-afc8-498abc1c716d"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GNDREF")
 		(at 233.68 53.34 270)
 		(unit 1)
@@ -14344,6 +14657,76 @@
 			(project ""
 				(path "/10c9b28d-d236-4c9d-afc8-498abc1c716d"
 					(reference "COM_PWR_IN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:MBR1020VL")
+		(at 63.5 64.77 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9c1a3d3d-4bb7-48d7-b54f-c10df4d0b429")
+		(property "Reference" "D2"
+			(at 65.278 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MBR1020VL"
+			(at 66.04 66.3574 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 67.945 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MBR1020VL-D.PDF"
+			(at 63.5 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V, 1A, 340 mV, Schottky Diode Rectifier, SOD-123F"
+			(at 63.5 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ebc3e45b-d8a5-4f4d-b324-d78dbb1f4368")
+		)
+		(pin "1"
+			(uuid "8808c041-e869-4551-bee9-20c13022d2f9")
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/10c9b28d-d236-4c9d-afc8-498abc1c716d"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -16932,6 +17315,76 @@
 			(project "BaseBoard"
 				(path "/10c9b28d-d236-4c9d-afc8-498abc1c716d"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:MBR1020VL")
+		(at 63.5 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ece650a9-e478-4359-abd4-8653bff4c8db")
+		(property "Reference" "D4"
+			(at 65.278 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MBR1020VL"
+			(at 66.04 145.0974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 67.945 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MBR1020VL-D.PDF"
+			(at 63.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "20V, 1A, 340 mV, Schottky Diode Rectifier, SOD-123F"
+			(at 63.5 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "39297a4f-6ad7-48f4-b34b-ec951dc970c3")
+		)
+		(pin "1"
+			(uuid "de0eee76-8924-4f4e-9b00-29e9885d7977")
+		)
+		(instances
+			(project "BaseBoard"
+				(path "/10c9b28d-d236-4c9d-afc8-498abc1c716d"
+					(reference "D4")
 					(unit 1)
 				)
 			)
