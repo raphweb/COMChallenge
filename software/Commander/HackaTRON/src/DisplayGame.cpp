@@ -14,7 +14,7 @@ void DisplayGame::init(GlobalState* context) {
         delete currentGame;
     }
     currentGame = new GameInfo();
-    drawInfoPanelWaitingForGame(XOFFSET);
+    drawInfoPanelWaitingForGame(PANELOFFSET);
 }
 
 void DisplayGame::processFrame(CANMessage& frame) {
@@ -106,7 +106,7 @@ void DisplayGame::processFrame(CANMessage& frame) {
 void DisplayGame::updatedDisplay() {
     if (gameEvent & PLAYER_RENAMED) {
         // a player was renamed
-        drawInfoPanelPlayerJoined(XOFFSET, *players[gameEventInfo]->name);
+        drawInfoPanelPlayerJoined(PANELOFFSET, *players[gameEventInfo]->name);
         gameEvent &= (~PLAYER_RENAMED);
         gameEventInfo = 0;
     }
@@ -122,8 +122,8 @@ void DisplayGame::updatedDisplay() {
                 currentGame->tail[i][y] = 0;
         }
         dma_display->clearScreen();
-        drawInfoPanelInGame(XOFFSET);
-        drawInfoPanelPlayerListInNewGame(XOFFSET);
+        drawInfoPanelInGame(PANELOFFSET);
+        drawInfoPanelPlayerListInNewGame(PANELOFFSET);
         gameEvent &= (~GAME_REQUESTED);
     }
     if (gameEvent & GAME_STATE_UPDATE) {
@@ -144,7 +144,7 @@ void DisplayGame::updatedDisplay() {
                 currentGame->tail[i][y] = 0;
             }
             drawGridPixel(currentGame->x[i], currentGame->y[i], c_black);
-            drawInfoPanelPlayerListInGamePlayer(XOFFSET, i, c_black);
+            drawInfoPanelPlayerListInGamePlayer(PANELOFFSET, i, c_black);
             currentGame->x[i] = UINT8_MAX;
             currentGame->y[i] = UINT8_MAX;
             gameEvent &= (~(PLAYER_DIED << i));
@@ -153,7 +153,7 @@ void DisplayGame::updatedDisplay() {
         for(uint8_t i = 0; i < PLAYERS_IN_GAME; i++) {
             currentGame->player[i]->score += currentGame->score[i];
         }
-        drawInfoPanelGameResults(XOFFSET);
+        drawInfoPanelGameResults(PANELOFFSET);
         gameEvent &= (~GAME_FINISH);
     }
 }
@@ -252,7 +252,7 @@ void DisplayGame::drawInfoPanelGameResults(int16_t xOffset) {
   for(uint8_t i = 0; i < PLAYERS_IN_GAME; i++) {
     dma_display->setTextColor(c_white);
     uint8_t scLen = dma_display->printf("%d ", currentGame->score[i]);
-    dma_display->setCursor(dma_display->getCursorX() - 1, dma_display->getCursorY());
+    dma_display->setCursor(16, dma_display->getCursorY());
     dma_display->setTextColor(activePlayerColorsGBSwitched[i % PLAYERS_IN_GAME]);
     const String* playerName = currentGame->player[i]->name;
 #if not defined(PANEL_GAME_STATS_WIDE)

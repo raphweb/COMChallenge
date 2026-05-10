@@ -33,7 +33,7 @@ void Replay::setup(GlobalState* context) {
     currentGameDir = {};
     currentGameFile = {};
     if (!iTimer) {
-        iTimer = new ESP32Timer(2);
+        iTimer = new ESP32Timer(0);
     }
     log_d("Created new replay object.");
     listDir(LittleFS, "/", 1);
@@ -181,4 +181,27 @@ bool IRAM_ATTR Replay::onTimer(void *timerNo) {
         currentFrameIndex++;
     }
     return true;
+}
+
+void Replay::fillReplayMenu(MenuNode* menu) {
+    MenuNode* replayTournamentMenu = new MenuNode("Replay a tournament", menu);
+    File recDir = LittleFS.open("/");
+    if (!recDir) {
+        log_e("Failed to open '/' directory.");
+    } else if (!recDir.isDirectory()) {
+        log_e("'/' is not a directory.");
+    } else {
+        File file = recDir.openNextFile();
+        while(file) {
+            if(file.isDirectory()) {
+                log_i("Found tournament recording: %s", file.name());
+            } else {
+                log_i("Found single game recording: %s", file.name());
+            }
+            replayTournamentMenu->kids->emplace_back(new MenuNode(file.name(), replayTournamentMenu, &Replay::setup, &Replay::loop));
+            file = recDir.openNextFile();
+        }
+    }
+    log_i("Used/remaining space for LittleFS: %d Bytes/%d Bytes.", LittleFS.usedBytes(), LittleFS.totalBytes() - LittleFS.usedBytes());
+    menu->kids->emplace_back(replayTournamentMenu);
 }

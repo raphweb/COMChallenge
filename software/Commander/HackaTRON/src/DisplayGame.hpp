@@ -32,6 +32,7 @@ const uint16_t activePlayerColors[PLAYERS_IN_GAME] = {
 
 // for some reason the two matrices for the game stats panel
 // do not have RGB colors but RBG
+// also, the colors do not fully match
 const uint16_t activePlayerColorsGBSwitched[PLAYERS_IN_GAME] = {
   COLOR565(240,120,0), // pink
   COLOR565(104,0,224), // green

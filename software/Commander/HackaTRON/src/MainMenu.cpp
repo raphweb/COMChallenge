@@ -38,7 +38,7 @@ void MainMenu::setup(GlobalState* context) {
         log_e("Foreground layer failed to initialize!");
         return;
     }
-    drawInfoPanelMainMenu(XOFFSET, 0);
+    drawInfoPanelMainMenu(PANELOFFSET, 0);
 }
     
 MenuNode* MainMenu::loop() {
@@ -46,13 +46,13 @@ MenuNode* MainMenu::loop() {
         ThumbStick::E_Direction moveDir = st2->getNextDirEvent();
         if (moveDir == ThumbStick::N || moveDir == ThumbStick::S) {
             for(uint16_t sc = 0; sc < 8; sc++) {
-                drawInfoPanelMainMenu(XOFFSET, moveDir == ThumbStick::N ? sc : -sc);
+                drawInfoPanelMainMenu(PANELOFFSET, moveDir == ThumbStick::N ? sc : -sc);
                 delay(15);
             }
             menuSel += curMenu->kids->size();
             moveDir == ThumbStick::N ? menuSel-- : menuSel++;
             menuSel %= curMenu->kids->size();
-            drawInfoPanelMainMenu(XOFFSET, 0);
+            drawInfoPanelMainMenu(PANELOFFSET, 0);
         } else if (moveDir == ThumbStick::E) {
             curMenu->lastKidIndex = menuSel;
             curMenu = curMenu->kids->at(menuSel);
@@ -61,11 +61,11 @@ MenuNode* MainMenu::loop() {
             } else {
                 for(uint16_t sc = 0; sc < PANEL_RES_X; sc++) {
                     if (sc % 2) {
-                        dma_display->drawFastVLine(XOFFSET + PANEL_RES_X*2 - sc/2 - 1, 0, 8, c_black);
-                        dma_display->drawFastVLine(XOFFSET + PANEL_RES_X*2 - sc/2 - 1, 16, 16, c_black);
+                        dma_display->drawFastVLine(PANELOFFSET + PANEL_RES_X*2 - sc/2 - 1, 0, 8, c_black);
+                        dma_display->drawFastVLine(PANELOFFSET + PANEL_RES_X*2 - sc/2 - 1, 16, 16, c_black);
                     }
-                    dma_display->fillRect(XOFFSET + sc*2, 0, 2, 8, c_black);
-                    dma_display->fillRect(XOFFSET + sc*2, 16, 2, 16, c_black);
+                    dma_display->fillRect(PANELOFFSET + sc*2, 0, 2, 8, c_black);
+                    dma_display->fillRect(PANELOFFSET + sc*2, 16, 2, 16, c_black);
                     delay(8);
                 }
                 log_i("Going to submenu %s.", curMenu->label->c_str());
@@ -75,7 +75,7 @@ MenuNode* MainMenu::loop() {
         } else if (moveDir == ThumbStick::W) {
             if (curMenu->parent) {
                 for(uint16_t sc = 0; sc < PANEL_RES_X-4; sc++) {
-                    dma_display->fillRect(XOFFSET + PANEL_RES_X*2 - sc*2 - 1, 0, 2, PANEL_RES_Y, c_black);
+                    dma_display->fillRect(PANELOFFSET + PANEL_RES_X*2 - sc*2 - 1, 0, 2, PANEL_RES_Y, c_black);
                     delay(8);
                 }
                 curMenu->lastKidIndex = menuSel;
@@ -93,7 +93,7 @@ MenuNode* MainMenu::loop() {
 }
 
 void MainMenu::drawInfoPanelMainMenu(int16_t xOffset, int16_t yOffset, int16_t width, int16_t height) {
-    if (yOffset == 0 && xOffset == XOFFSET) {
+    if (yOffset == 0 && xOffset == PANELOFFSET) {
         for(uint8_t i = 0; i < 8; i++) {
             background_layer.fastFillRect(xOffset, 7-i, width, 1, CRGB(140-i*12,140-i*12,140-i*12));
         }

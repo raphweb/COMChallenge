@@ -27,6 +27,7 @@ class ProbeNodes {
 
     private: static void switchBB();
     private: static void switchBBBitMask(uint8_t bitMask);
+    private: static void drawProbingNode(uint16_t color);
 };
 
 #endif

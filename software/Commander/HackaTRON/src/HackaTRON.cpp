@@ -33,26 +33,7 @@ void fillMenu() {
   menu->kids->emplace_back(new MenuNode("Probe connected nodes", menu, &setup<ProbeNodes>, &loop<ProbeNodes>));
   menu->kids->emplace_back(new MenuNode("Host single game", menu, nullptr, nullptr));
   menu->kids->emplace_back(new MenuNode("Host a tournament", menu, nullptr, nullptr));
-  MenuNode* replayTournamentMenu = new MenuNode("Replay a tournament", menu);
-  File recDir = LittleFS.open("/");
-  if (!recDir) {
-    log_e("Failed to open '/' directory.");
-  } else if (!recDir.isDirectory()) {
-    log_e("'/' is not a directory.");
-  } else {
-    File file = recDir.openNextFile();
-    while(file) {
-      if(file.isDirectory()) {
-        log_i("Found tournament recording: %s", file.name());
-      } else {
-        log_i("Found single game recording: %s", file.name());
-      }
-      replayTournamentMenu->kids->emplace_back(new MenuNode(file.name(), replayTournamentMenu, &setup<Replay>, &loop<Replay>));
-      file = recDir.openNextFile();
-    }
-  }
-  log_i("Used/remaining space for LittleFS: %d Bytes/%d Bytes.", LittleFS.usedBytes(), LittleFS.totalBytes() - LittleFS.usedBytes());
-  menu->kids->emplace_back(replayTournamentMenu);
+  Replay::fillReplayMenu(menu);
   menu->kids->emplace_back(new MenuNode("Observe and display", menu, nullptr, nullptr));
   MenuNode* advancedOptions = new MenuNode("Advanced options", menu);
   advancedOptions->kids->emplace_back(new MenuNode("Disable all nodes", advancedOptions, [](GlobalState* context) { ProbeNodes::switchAllNodes(*context->i2c, false); }, nullptr));
@@ -75,25 +56,7 @@ void setup() {
   // init and fill menu entries
   menu = new MenuNode(&setup<MainMenu>, &loop<MainMenu>);
   fillMenu();
-  // LED Matrix configuration
-  HUB75_I2S_CFG mxconfig(
-    PANEL_RES_X, PANEL_RES_Y, PANEL_CHAIN,
-    {GPIO_NUM_41, GPIO_NUM_42, GPIO_NUM_40, GPIO_NUM_39, GPIO_NUM_38, GPIO_NUM_37,
-      GPIO_NUM_35, GPIO_NUM_36, GPIO_NUM_48, GPIO_NUM_45, GPIO_NUM_21,
-      GPIO_NUM_47, GPIO_NUM_2, GPIO_NUM_1}
-  );
-  mxconfig.clkphase = false;
-  mxconfig.latch_blanking = 4;
-  // Display Setup
-  MatrixPanel_I2S_DMA* dma_display = new MatrixPanel_I2S_DMA(mxconfig);
-#if defined(PANEL_RES_Y) && PANEL_RES_Y == 32
-  dma_display->setRotation(2);
-#endif
-  dma_display->begin();
-  dma_display->setBrightness8(127); //0-255
-  dma_display->clearScreen();
-  dma_display->setTextSize(1);
-  dma_display->setTextWrap(false);
+  MatrixPanel_I2S_DMA* dma_display = setupMatrixPanel();
   // calibraty thumbsticks
   st1 = new ThumbStick(GPIO_NUM_17,GPIO_NUM_16,GPIO_NUM_18,true,true);
   st1->calibrate();
@@ -101,7 +64,7 @@ void setup() {
   st2->calibrate();
   // timer setup to periodically read thumbstick states
   ESP32Timer iTimer1(1);
-  iTimer1.setInterval(64000, [](void* timerNo) -> boolean {
+  iTimer1.setInterval(64000UL, [](void* timerNo) -> boolean {
     st1->sampleState();
     st2->sampleState();
     return true;

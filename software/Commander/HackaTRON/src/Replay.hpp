@@ -44,6 +44,8 @@ class Replay {
     private: static int parsePacket();
     private: static void listDir(fs::FS &fs, const char *dirname, uint8_t levels);
     private: static boolean onTimer(void *timerNo);
+
+    public: static void fillReplayMenu(MenuNode* menu);
 };
 
 #if defined(CREATE_EXAMPLE_RECORDING)
